@@ -1,15 +1,12 @@
 import React from 'react';
-import ImgComponents from '../comps/ImgComponent';
+import ImgComponents from '../comps/ImgComponents';
 
 export default {
-    title:"Example/ImgComponent",
+    title:"Example/ImgComponents",
     component:<ImgComponents />
 }
 
 
-export const MyImage = () => (
-    <img src="/Images.png" alt="my image" />
-  );
-
 
 export const MyImage = () => <ImgComponents />
+   
