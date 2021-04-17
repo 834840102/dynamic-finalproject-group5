@@ -6,4 +6,5 @@ export default {
   component:<LogoComponent />
 }
 
+
 export const MyLogoComponent = () => <LogoComponent />
