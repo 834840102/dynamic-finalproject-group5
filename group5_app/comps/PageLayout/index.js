@@ -13,7 +13,6 @@ const PageLayoutContainer = styled.div`
 `;
 
 const PageLayoutCont = styled.div`
- 
 `;
 
 const PageLayout = ({
