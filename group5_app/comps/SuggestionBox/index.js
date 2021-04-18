@@ -13,13 +13,11 @@ const SuggestionBoxCont = styled.div`
 `;
 
 const SuggestionBoxText = styled.p`
-    font-family:Raleway;
     font-size: 18px;
     font-weight:400;
 `;
 
-const SuggestionBoxSub = styled.h4`
-    font-family:Raleway;
+const SuggestionBoxSub = styled.p`
     font-size: 18px;
     font-weight:700;
 `;

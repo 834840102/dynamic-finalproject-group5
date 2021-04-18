@@ -29,7 +29,7 @@ const GoalBtn = ({
     goal="lost weight"
 })=>{
     return<GoalBtnCont>
-        <GoalBtnImg src="/images.jpg" />
+        <GoalBtnImg src="" />
         <GoalBtnText>{goal}</GoalBtnText>
     </GoalBtnCont>
 }
