@@ -16,24 +16,20 @@ const GoalBtnCont = styled.div`
 `;
 
 const GoalBtnImg = styled.img`
-    width: 50px;
-    height:50px;
+    width: 130px;
+    height: 50px;
 `;
 
 const GoalBtnText = styled.p`
-    font-family:Sansita;
     font-size: 16px;
     font-weight:normal;
 `;
 
 const GoalBtn = ({
-    width=50,
-    height=50,
-    src="/vercel.svg",
     goal="lost weight"
 })=>{
     return<GoalBtnCont>
-        <GoalBtnImg width={width} height={height} src={src} />
+        <GoalBtnImg src="/images.jpg" />
         <GoalBtnText>{goal}</GoalBtnText>
     </GoalBtnCont>
 }
