@@ -6,9 +6,9 @@ const PageLayoutContainer = styled.div`
     width:400px;
     height:750px;
     background-color: #F2F0EB;
-    border: 55px solid #BBE2D7;
-    border-left: 15px solid #BBE2D7;
-    border-right: 15px solid #BBE2D7;
+    border: 55px solid #9FCBBB;
+    border-left: 15px solid #9FCBBB;
+    border-right: 15px solid #9FCBBB;
     border-radius: 45px;
 `;
 
