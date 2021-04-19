@@ -2,7 +2,7 @@ import React from 'react';
 import LogoComponent from '../comps/LogoComponent';
 
 export default {
-  title: "Example/LogoComponent",
+  title: 'Example/LogoComponent',
   component:<LogoComponent />
 }
 
