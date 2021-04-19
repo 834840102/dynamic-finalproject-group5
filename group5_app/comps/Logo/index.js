@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const LogoComponentImg = styled.img`
+const LogotImg = styled.img`
     width:43px;
     height:61px;
 `; 
 
-const LogoComponent = ({
+const Logo = ({
     width=43,
     height=61,
     src="vercel.svg"
 }) =>{
-    return <LogoComponentImg width={width} height={height} src={src} />
+    return <LogoImg width={width} height={height} src={src} />
 }
 
-export default LogoComponent;
+export default Logo;
