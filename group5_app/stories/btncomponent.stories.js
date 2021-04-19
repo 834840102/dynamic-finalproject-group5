@@ -1,14 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import BtnComponent from '../comps/BtnComponent';
 
 export default {
-        title:"Button",
-        component:<Button/>
+        title:"BtnComponent",
+        component:<BtnComponent />
 }
-export const MyButton = () => <Button />
-export const ButtonWithTextProp = () => <Button text="Press Me" />
-export const ButtonWithColorProp = () => (
-    <Button 
-        text="Color blue"
-        bgcolor/>
-)
+export const MyBtnComponent = () => <BtnComponent />

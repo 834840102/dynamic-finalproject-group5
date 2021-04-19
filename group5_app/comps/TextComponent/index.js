@@ -1,21 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Text = styled.text`
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 149px;
-    top: 720px;
-    & >*{
-        color:#FFFFFF;
-    }
+const TextBox = styled.div`
+
+`;
+
+const TextTitle = styled.h3`
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #6C9083;
+    text-align:center;
+`;
+
+const TextDescription = styled.p`
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #33393E;
+    text-align:center;
 `;
 
 const TextComponent = ({
-    text="Get Started",
+    Subtitle = "What’s your healthy living? ",
+    Hint = "By choosing your main goal, we’ll be able to help you create a suitable plan for you",
 })=>{
-    return <Text>{text}</Text>
+    return <TextBox>
+            <TextTitle>{Subtitle}</TextTitle>
+            <TextDescription>{Hint}</TextDescription>
+        </TextBox>
 }
+
 
 export default TextComponent;

@@ -1,16 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const text = styled.button`
+const ButtonInput = styled.button`
     width: 225px;
     height: 60px;
     background-color: #D4D1C7;
     padding:20px;
     border-radius:15px;
     border:none;
-    & >*{
-        color:#FFFFFF;
-    }
+    color:#FFFFFF;
 `;
 
 const BtnComponent = ({
