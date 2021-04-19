@@ -6,8 +6,12 @@ const LogoImg = styled.img`
     height:61px;
 `; 
 
-const Logo = ({}) =>{
-    return <LogoImg src="/vercel.svg" />
+const Logo = ({
+    width=43,
+    height=61,
+    src="/vercel.svg"
+}) =>{
+    return <LogoImg width={width} height={height} src={src} />
 }
 
 export default Logo;
