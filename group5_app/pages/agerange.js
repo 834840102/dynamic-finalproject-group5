@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 import BtnComponent from '../comps/BtnComponent'
-import LogoComponent from '../comps/SmallLogoComponent'
+import LogoComponent from '../comps/LogoComponent'
 import TextComponent from '../comps/TextComponent'
 
 const PageLayoutContainer = styled.div`
@@ -34,20 +34,21 @@ const PageLayoutContainer = styled.div`
       flex-grow: 0.5;
       flex-direction:column;
     }
+    
 `;
 
 export default function Home() {
   return <PageLayoutContainer>
     <div className="logo">
-      <LogoComponent />
+      <LogoComponent address="/welcomepage"/>
       </div>
     <div className="text">
       <TextComponent Subtitle="What's your age range? " Hint=""/>
       </div>
     <div className="btn">
-      <div><BtnComponent width="134px" height="126px" text="15-21" /></div>
-      <div><BtnComponent width="134px" height="126px" text="22-35" /></div>
-      <div><BtnComponent width="134px" height="126px" text="Above 35" /></div>
+      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="15-21" fontsize="22px" /></div>
+      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="22-35" fontsize="22px" /></div>
+      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="Above 35" fontsize="22px" /></div>
     </div>
   </PageLayoutContainer>
 }

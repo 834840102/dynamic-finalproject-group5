@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import {useRouter} from 'next/router';
+import {useRouter} from 'next/router'
 
 const LogoImg = styled.img`
-    width:${props=>props.width};
-    height:${props=>props.height};
+    width:43px;
+    height:61px;
 `; 
 
-const LogoComponent = ({
-    width="43px",
-    height="61px",
+const Logo = ({
+    width=43,
+    height=61,
     src="/Logo.png",
     address = "/home"
 }) =>{
@@ -19,4 +19,4 @@ const LogoComponent = ({
         </div>
 }
 
-export default LogoComponent;
+export default Logo;

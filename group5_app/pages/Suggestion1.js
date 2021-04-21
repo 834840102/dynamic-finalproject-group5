@@ -29,10 +29,14 @@ const PageLayoutContainer = styled.div`
       flex-grow:0.2;
     }
 
-    .btn{
+    .SuggestionBox{
       display:flex;
       flex-grow: 0.5;
       flex-direction:column;
+    }
+
+    .Back{
+
     }
 `;
 
@@ -42,12 +46,14 @@ export default function Home() {
       <LogoComponent />
       </div>
     <div className="text">
-      <TextComponent Subtitle="What's your age range? " Hint=""/>
+      <TextComponent Subtitle="WARNING " Hint=""/>
       </div>
-    <div className="btn">
+    <div className="SuggestionBox">
       <div><BtnComponent width="134px" height="126px" text="15-21" /></div>
       <div><BtnComponent width="134px" height="126px" text="22-35" /></div>
-      <div><BtnComponent width="134px" height="126px" text="Above 35" /></div>
+    </div>
+    <div className="Back">
+        <BtnComponent />
     </div>
   </PageLayoutContainer>
 }

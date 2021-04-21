@@ -4,33 +4,53 @@ import styled from 'styled-components';
 const SuggestionBoxCont = styled.div`
     display:flex;
     flex-direction: column;
-    align-items: center;
-    width:300px;
-    height:400px;
+    align-items: start;
+    width:${props=>props.Boxwidth};
+    height:${props=>props.Boxheight};
     padding: 30px 10px 10px 10px;
     border-radius:10px;
     border: 1px solid #6C9083;
+    background-color: white;
 `;
 
-const SuggestionBoxText = styled.p`
+const SuggestionBoxText = styled.li`
     font-family:Raleway;
     font-size: 18px;
     font-weight:400;
+    color: #33393E;
+    list-style: ${props=>props.listyle}
 `;
 
 const SuggestionBoxSub = styled.h4`
     font-family:Raleway;
     font-size: 18px;
     font-weight:700;
+    color: #33393E;
 `;
 
+
 const SuggestionBox = ({
+    Boxwidth=300,
+    Boxheight=300,
     title="Tips",
-    suggestion="Build more lean muscle"
+    suggestion1="",
+    suggestion2="",
+    suggestion3="",
+    suggestion4="",
+    suggestion5="",
+    suggestion6="",
+    suggestion7="",
+    listyle = "point",
 })=>{
-    return<SuggestionBoxCont>
-        <SuggestionBoxSub>{title}</SuggestionBoxSub>
-        <SuggestionBoxText>{suggestion}</SuggestionBoxText>
+    return<SuggestionBoxCont Boxheight={Boxheight} Boxwidth={Boxwidth} >
+        <SuggestionBoxSub listyle={listyle}>{title}</SuggestionBoxSub>
+        <SuggestionBoxText listyle={listyle}>{suggestion1}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion2}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion3}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion4}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion5}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion6}</SuggestionBoxText>
+        <SuggestionBoxText listyle={listyle}>{suggestion7}</SuggestionBoxText>
     </SuggestionBoxCont>
 }
 

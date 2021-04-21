@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
 
 const GoalBtnCont = styled.div`
     display:inline-flex;
@@ -9,6 +10,7 @@ const GoalBtnCont = styled.div`
     background-color:#D4D1C7;
     width:135px;
     height:125px;
+    margin:10px;
     border-radius:10px;
     & >*{
         color:#fff;
@@ -16,20 +18,24 @@ const GoalBtnCont = styled.div`
 `;
 
 const GoalBtnImg = styled.img`
-    width: 130px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
 `;
 
 const GoalBtnText = styled.p`
     font-size: 16px;
     font-weight:normal;
+    font-family: 'Sansita', sans-serif;
 `;
 
 const GoalBtn = ({
-    goal="lost weight"
+    src="/lose-weight.png",
+    goal="Lose Weight",
+    address = "/bmipage"
 })=>{
-    return<GoalBtnCont>
-        <GoalBtnImg src="/images.jpg" />
+    const router = useRouter()
+    return<GoalBtnCont onClick={()=>router.push(address)}>
+        <GoalBtnImg src={src} />
         <GoalBtnText>{goal}</GoalBtnText>
     </GoalBtnCont>
 }
