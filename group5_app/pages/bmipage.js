@@ -43,7 +43,7 @@ const BMIContainer = styled.div`
             <LogoComponent address="/welcomepage"/>
             </div>
         <div className="text">
-            <TextComponent Subtitle="Your BMI[Body Mass Index]" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
+            <TextComponent Subtitle="Your BMI[Body Mass Index]" src="/exclamation_mark.png" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
         </div>
         <div>
             <BtnComponent width="266px" height="77px" text="BMI Calculator" fontsize="22px" address="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm"/>
@@ -60,6 +60,5 @@ const BMIContainer = styled.div`
             <div><BtnComponent address="/healthyliving" width="266px" height="77px" text="OverWeight (25.5-40)" fontsize="20px"/>
             </div>
         </div>
-
   </BMIContainer>
 }

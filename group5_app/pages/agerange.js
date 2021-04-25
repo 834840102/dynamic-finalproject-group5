@@ -34,7 +34,6 @@ const PageLayoutContainer = styled.div`
       flex-grow: 0.5;
       flex-direction:column;
     }
-    
 `;
 
 export default function Home() {

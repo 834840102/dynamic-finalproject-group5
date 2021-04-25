@@ -55,11 +55,6 @@ const PageLayoutContainer = styled.div`
       margin-bottom: -42px;
       z-index:3;
     }
-
-    .Back{
-      display:flex;
-      flex-direction: column;
-    }
 `;
 
 export default function Home() {
