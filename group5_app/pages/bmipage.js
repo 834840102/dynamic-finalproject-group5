@@ -87,7 +87,6 @@ const BMIContainer = styled.div`
         <div>
             <BtnComponent width="266px" height="77px" text="BMI Calculator" fontsize="22px" address="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm"/>
         </div>
-      
         <div className="bmi">
             <TextComponent Subtitle="" Hint="Your BMI result" pfontsize="18px" pfontweight="700" />
         </div>
