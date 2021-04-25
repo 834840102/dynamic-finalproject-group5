@@ -9,13 +9,9 @@ const PageLayoutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:400px;
-    height:750px;
+    width:100vw;
+    height:100vh;
     background-color: #F2F0EB;
-    border: 55px solid #9FCBBB;
-    border-left: 15px solid #9FCBBB; 
-    border-right: 15px solid #9FCBBB;
-    border-radius: 45px;
 
     .logo{
       display:flex;
@@ -35,6 +31,10 @@ const PageLayoutContainer = styled.div`
       flex-direction:column;
     }
     
+    button:hover{
+      background-color: #6C9083;
+      cursor: pointer;
+    }
 `;
 
 export default function Home() {
@@ -46,9 +46,9 @@ export default function Home() {
       <TextComponent Subtitle="What's your age range? " Hint=""/>
       </div>
     <div className="btn">
-      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="15-21" fontsize="22px" /></div>
-      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="22-35" fontsize="22px" /></div>
-      <div><BtnComponent address="/bmipage" width="135px" height="125px" text="Above 35" fontsize="22px" /></div>
+      <BtnComponent address="/bmipage" width="135px" height="125px" text="15-21" fontsize="22px" />
+      <BtnComponent address="/bmipage" width="135px" height="125px" text="22-35" fontsize="22px" />
+      <BtnComponent address="/bmipage" width="135px" height="125px" text="Above 35" fontsize="22px" />
     </div>
   </PageLayoutContainer>
 }
