@@ -26,10 +26,11 @@ const TextComponent = ({
     h3fontsize = 22,
     pfontsize = 16,
     pfontweight = 500,
-    h3color = "#6C9083"
+    h3color = "#6C9083",
+    src="/exclamation_mark.png",
 })=>{
     return <div>
-            <TextTitle h3fs={h3fontsize} h3color={h3color}>{Subtitle}</TextTitle>
+            <TextTitle h3fs={h3fontsize} h3color={h3color}>{Subtitle} {src}</TextTitle>
             <TextDescription pfs={pfontsize} pfw={pfontweight}>{Hint}</TextDescription>
         </div>
 }

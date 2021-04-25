@@ -35,6 +35,39 @@ const BMIContainer = styled.div`
         flex-direction: column;
         flex-grow: 0.5;
       }
+
+      .image_hi {
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+      .hide {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .image_hi:hover .image {
+        opacity: 0.3;
+      }
+      
+      .image_hi:hover .hide {
+        opacity: 1;
+      }
+      
+      .info {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
     `;
 
       export default function BMI() {
@@ -44,6 +77,12 @@ const BMIContainer = styled.div`
             </div>
         <div className="text">
             <TextComponent Subtitle="Your BMI[Body Mass Index]" src="/exclamation_mark.png" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
+            <div className="image_hi">
+              <img src="/exclamation_mark.png" width="22px" height="22px"></img>
+            </div>
+            <div className="hide">
+              <div className="info">text</div>
+            </div>
         </div>
         <div>
             <BtnComponent width="266px" height="77px" text="BMI Calculator" fontsize="22px" address="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm"/>

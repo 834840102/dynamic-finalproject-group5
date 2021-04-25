@@ -114,19 +114,6 @@
   height: 1em;
 }
 
-/* Yuma coding */
-.backbutton {
-  position: absolute;
-  width: 39px;
-  height: 25px;
-  font-family: Sansita;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 140.62%;
-  color: #33393E;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
