@@ -6,4 +6,6 @@ body {
   margin: 0;
   font-family: 'Sansita', sans-serif;
   font-family: 'Raleway', sans-serif;
+  display:flex;
+  justify-content: center;
 }

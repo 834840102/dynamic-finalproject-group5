@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
-import BtnComponent from '../comps/BtnComponent'
-import LogoComponent from '../comps/SmallLogoComponent'
+import GoalBtn from '../comps/GoalBtn'
+import LogoComponent from '../comps/LogoComponent'
 import TextComponent from '../comps/TextComponent'
 
 const PageLayoutContainer = styled.div`
@@ -9,13 +9,9 @@ const PageLayoutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:400px;
-    height:750px;
+    width:100vw;
+    height:100vh;
     background-color: #F2F0EB;
-    border: 55px solid #9FCBBB;
-    border-left: 15px solid #9FCBBB; 
-    border-right: 15px solid #9FCBBB;
-    border-radius: 45px;
 
     .logo{
       display:flex;
@@ -34,20 +30,25 @@ const PageLayoutContainer = styled.div`
       flex-grow: 0.5;
       flex-direction:column;
     }
+
+    .btn div:hover{
+      background-color: #6C9083;
+      cursor: pointer;
+    }
 `;
 
 export default function Home() {
   return <PageLayoutContainer>
     <div className="logo">
-      <LogoComponent />
+      <LogoComponent address="/welcomepage"/>
       </div>
     <div className="text">
-      <TextComponent Subtitle="What's your age range? " Hint=""/>
+      <TextComponent />
       </div>
     <div className="btn">
-      <div><BtnComponent width="134px" height="126px" text="15-21" /></div>
-      <div><BtnComponent width="134px" height="126px" text="22-35" /></div>
-      <div><BtnComponent width="134px" height="126px" text="Above 35" /></div>
+      <GoalBtn address="/suggestion2,3,11,12,20,21"/>
+      <GoalBtn src="/diet.png" goal="Maintain Weight" address="/suggestion2,3,11,12,20,21"/>
+      <GoalBtn src="/muscle.png" goal="Gain Weight" address="/suggestion1,10"/>
     </div>
   </PageLayoutContainer>
 }
