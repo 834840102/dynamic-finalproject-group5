@@ -9,9 +9,13 @@ const PageLayoutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
-    height:100vh;
+    width:400px;
+    height:750px;
     background-color: #F2F0EB;
+    border: 55px solid #9FCBBB;
+    border-left: 15px solid #9FCBBB; 
+    border-right: 15px solid #9FCBBB;
+    border-radius: 45px;
 
     .logo{
       display:flex;
@@ -30,11 +34,6 @@ const PageLayoutContainer = styled.div`
       flex-grow: 0.5;
       flex-direction:column;
     }
-
-    .btn div:hover{
-      background-color: #6C9083;
-      cursor: pointer;
-    }
 `;
 
 export default function Home() {
@@ -46,9 +45,9 @@ export default function Home() {
       <TextComponent />
       </div>
     <div className="btn">
-      <GoalBtn address="/suggestion2,3,11,12,20,21"/>
-      <GoalBtn src="/diet.png" goal="Maintain Weight" address="/suggestion2,3,11,12,20,21"/>
-      <GoalBtn src="/muscle.png" goal="Gain Weight" address="/suggestion1,10"/>
+      <div><GoalBtn address="/suggestion2,3,11,12,20,21"/></div>
+      <div><GoalBtn src="/diet.png" goal="Maintain Weight" address="/suggestion2,3,11,12,20,21"/></div>
+      <div><GoalBtn src="/muscle.png" goal="Gain Weight" address="/suggestion1,10"/></div>
     </div>
   </PageLayoutContainer>
 }

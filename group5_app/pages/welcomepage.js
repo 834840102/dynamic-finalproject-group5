@@ -8,9 +8,13 @@ const PageLayoutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100vw;
-    height:100vh;
+    width:400px;
+    height:750px;
     background-color: #F2F0EB;
+    border: 55px solid #9FCBBB;
+    border-left: 15px solid #9FCBBB; 
+    border-right: 15px solid #9FCBBB;
+    border-radius: 45px;
 
     .logo{
       display:flex;
@@ -51,7 +55,7 @@ export default function Home() {
         </div>
       <div className="slogan">
         <div ><TextComponent Subtitle="BETTER FOOD," Hint="" h3color="#D7921E" h3fontsize="30px"/></div>
-        <div><TextComponent Subtitle="BETTER HEALTH," Hint=""  h3color="#D7921E" h3fontsize="30px"/></div>
+        <div><TextComponent Subtitle="BETTER EAT," Hint=""  h3color="#D7921E" h3fontsize="30px"/></div>
         <div><TextComponent Subtitle="BETTER YOU!" Hint=""  h3color="#D7921E" h3fontsize="30px"/></div>
       </div>
       <div className="btn">
