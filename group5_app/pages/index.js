@@ -3,19 +3,17 @@ import styled from 'styled-components'
 import LogoComponent from '../comps/LogoComponent'
 
 const PageLayoutContainer = styled.div`
-    display: flex;
+    display:flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
-    width:400px;
-    height:750px;
-    background-color: #F2F0EB;
-    border: 55px solid #9FCBBB;
-    border-left: 15px solid #9FCBBB;
-    border-right: 15px solid #9FCBBB;
-    border-radius: 45px;
+    box-sizing: border-box;
+    flex-direction: column;
+    width:100vw;
+    min-height:100vh;
+    background-color: #F2F0EB; 
 `;
 
 
 export default function Home(){
-    return <PageLayoutContainer><LogoComponent width="120px" height="170px" address="/welcomepage"/></PageLayoutContainer>
+    return <PageLayoutContainer><LogoComponent width="200px" height="260px" address="/welcomepage"/></PageLayoutContainer>
 } 
