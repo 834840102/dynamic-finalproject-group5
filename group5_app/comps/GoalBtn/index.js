@@ -8,8 +8,8 @@ const GoalBtnCont = styled.div`
     justify-content: center;
     align-items: center;
     background-color:#D4D1C7;
-    width:135px;
-    height:125px;
+    width:180px;
+    height:150px;
     margin:10px;
     border-radius:10px;
     & >*{
@@ -18,12 +18,12 @@ const GoalBtnCont = styled.div`
 `;
 
 const GoalBtnImg = styled.img`
-    width: 51px;
-    height: 51px;
+    width: 70px;
+    height: 70px;
 `;
 
 const GoalBtnText = styled.p`
-    font-size: 16px;
+    font-size: 20px;
     font-weight:normal;
     font-family: 'Sansita', sans-serif;
 `;

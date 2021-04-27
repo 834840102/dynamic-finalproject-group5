@@ -12,7 +12,7 @@ const PageLayoutContainer = styled.div`
     justify-content: center;
     align-items: center;
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     background-color: #F2F0EB;
     
     .back {
@@ -33,17 +33,18 @@ const PageLayoutContainer = styled.div`
       display:flex;
       flex-grow:3;
       flex-direction: column;
-      margin-right: 20px;
     }
 
     .MyImg{
       display:flex;
-      flex-grow: 8;
+      flex-grow: 5;
       flex-direction:column;
+      margin-top: 20px;
     }
 
     .startbtn{
       display:flex;
+      margin-top: 5%;
     }
 
     button:hover{
@@ -61,14 +62,14 @@ export default function Home() {
       <LogoComponent address="/welcomepage"/>
       </div>
     <div className="text">
-      <TextComponent Subtitle = "" Hint="Great! Now you know a lot more about healthy diet." pfontsize="27px" h3color="#33393E"/>
-      <TextComponent Subtitle = "" Hint=" Ready to find out a proper diet for you? " pfontsize="25px" h3color="#33393E"/> 
+      <TextComponent Subtitle = "Great! Now you know a lot more about healthy diet" Hint="" h3fontsize="22px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Ready to find out a proper diet for you? " Hint="" h3fontsize="22px" h3color="#33393E" pfontweight="bold"/> 
     </div>
     <div className="MyImg">
-      <ImgComponents src="lunch-box.png" imgheight="330px" imgwidth="330px" address="/welcomepage"/>
+      <ImgComponents src="meal.png" imgheight="260px" imgwidth="260px"/>
     </div>
     <div className="startbtn">
-          <BtnComponent address="/agerange" width="255px" height="70px" text="Let's Start"/>
+          <BtnComponent address="/agerange" width="225px" height="60px" text="Let's Start"/>
     </div>
   </PageLayoutContainer>
 }

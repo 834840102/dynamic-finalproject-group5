@@ -23,14 +23,13 @@ const TextDescription = styled.p`
 const TextComponent = ({
     Subtitle = "What’s your healthy living? ",
     Hint = "By choosing your main goal, we’ll be able to help you create a suitable plan for you",
-    h3fontsize = 22,
-    pfontsize = 16,
-    pfontweight = 500,
+    h3fontsize = "24px",
+    pfontsize = "18px",
+    pfontweight = "normal",
     h3color = "#6C9083",
-    src="/exclamation_mark.png",
 })=>{
     return <div>
-            <TextTitle h3fs={h3fontsize} h3color={h3color}>{Subtitle} {src}</TextTitle>
+            <TextTitle h3fs={h3fontsize} h3color={h3color}>{Subtitle}</TextTitle>
             <TextDescription pfs={pfontsize} pfw={pfontweight}>{Hint}</TextDescription>
         </div>
 }

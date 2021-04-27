@@ -11,14 +11,13 @@ const PageLayoutContainer = styled.div`
     justify-content: center;
     align-items: center;
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     background-color: #F2F0EB;
     
     .back {
       display: flex;
       margin-right: 80%;
       cursor:pointer;
-      font-size: 20px;
     }
 
     .logo{
@@ -36,16 +35,13 @@ const PageLayoutContainer = styled.div`
       display:flex;
       flex-grow: 5;
       flex-direction:column;
+      cursor: pointer;
     }
 
     .MyImg2{
       display:flex;
       flex-grow: 3;
       flex-direction:column;
-    }
-
-    button:hover{
-      background-color: #6C9083;
       cursor: pointer;
     }
 `;
@@ -59,15 +55,15 @@ export default function Home() {
       <LogoComponent address="/welcomepage"/>
       </div>
     <div className="text">
-      <TextComponent Subtitle = "Choose the information you want to learn about" Hint="" h3fontsize="28px"/>
+      <TextComponent Subtitle = "Choose the information you want to learn about" Hint="" h3fontsize="24px"/>
       </div>
     <div className="MyImg">
-      <ImgComponents src="meal.png" imgheight="200px" imgwidth="200px" address="/welcomepage"/>
-      <TextComponent Subtitle = "Healthy Diet" Hint="" h3color="#6C9083" h3fontsize="25px"/>
+      <ImgComponents src="lunch-box.png" imgheight="180px" imgwidth="180px" address="/healthdef"/>
+      <a href="/healthydef"><TextComponent Subtitle = "Healthy Diet" Hint="" h3color="#6C9083" h3fontsize="22px" address="/healthdef"/></a>
     </div>
     <div className="MyImg2">
-      <ImgComponents src="dangerous.png" imgheight="200px" imgwidth="200px" address="/welcomepage"/>
-      <TextComponent Subtitle = "Unhealthy Diet" Hint="" h3color="#6C9083" h3fontsize="25px"/>
+      <ImgComponents src="fast-food.png" imgheight="180px" imgwidth="180px" address="/unhealthydef"/>
+      <a href="/unhealthydef"><TextComponent Subtitle = "Unhealthy Diet" Hint="" h3color="#6C9083" h3fontsize="22px" /></a>
     </div>
 
   </PageLayoutContainer>

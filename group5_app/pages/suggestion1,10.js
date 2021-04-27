@@ -4,6 +4,7 @@ import BtnComponent from '../comps/BtnComponent';
 import TextComponent from '../comps/TextComponent';
 import SuggestionBox from '../comps/SuggestionBox';
 import ImgComponents from '../comps/ImgComponents';
+import LogoComponent from '../comps/LogoComponent'
 
 const PageLayoutContainer = styled.div`
     display:flex;
@@ -12,27 +13,36 @@ const PageLayoutContainer = styled.div`
     align-items: center;
     width:100vw;
     min-height:100vh;
-    box-sizing:border-box;
-    padding-top:60px;
     background-color: #F2F0EB;
 
+    .logo{
+      margin-top: 30px;
+    }
 
-    .text{
-      display:flex;
+    .back {
+      display: flex;
+      margin-right: 80%;
+      cursor:pointer;
+      font-size: 20px;
+    }
+
+    .suggestiontext{
+        display:flex;
         flex-direction:column;
-        margin-top: -55px;
+        justify-content: center;
+        align-items: center;
     }
 
     .box{
-        display:flex;
+      display:flex;
       flex-direction: column;
-        margin-top:30px;
+      margin-top:30px;
     }
 
     .BoxIcon{
       display:inline-flex;
       justify-content: center;
-      margin-bottom: -42px;
+      margin-bottom: -47px;
       z-index:3;
     }
 
@@ -40,43 +50,37 @@ const PageLayoutContainer = styled.div`
       display:inline-flex;
       justify-content: center;
       align-items: space-between;
-      margin-bottom: -42px;
+      margin-bottom: -47px;
       z-index:3;
     }
 
-    .Back{
+    .home{
       display:flex;
-      flex-direction: column;
-    }
-
-    button:hover{
-      background-color: #6C9083;
-      cursor: pointer;
-    }
-
-    button:hover{
-      background-color: #6C9083;
-      cursor: pointer;
+      margin-top: 5%;
     }
 `;
 
 export default function Home() {
   return <PageLayoutContainer>
-    <div className="text">
-      <TextComponent Subtitle="SUGGESTION " Hint="According to the BMI, you are currently underweight." h3fontsize="32px" h3color="#6C9083" pfontsize="18px" pfontweight="700" />
-      <TextComponent Subtitle="" Hint="We recommend not opting for weight loss, as being underweight can cause as many health concerns for an individual as overweight can occur. You should gain weight for better health." pfontsize="18px" pfontweight="400" />
+    <div className="logo">
+      <LogoComponent address="/welcomepage"/>
+      </div>
+
+    <div className="suggestiontext">
+      <TextComponent Subtitle="SUGGESTION " Hint="According to the BMI, you are currently underweight." h3fontsize="24px" h3color="#6C9083" pfontsize="18px" pfontweight="700" />
+      <TextComponent Subtitle="" Hint="We recommend not opting for weight loss, as being underweight can cause as many health concerns for an individual as overweight can occur. You should gain weight for better health." pfontsize="18px" />
     </div>
     <div className="SuggestionBox">
     <div className="box">
-      <div className="BoxIcon"><ImgComponents src="/heartbeat.png" imgheight="110px" imgwidth="110px" /></div>
-      <div><SuggestionBox Boxheight="280px" Boxwidth="300px" title="Tips to boost your weight safely:" suggestion1="Eat frequently" suggestion2="Choose nutrient-rich foods" suggestion3="Exercise" suggestion4="Sleep schedule" suggestion5="Have an occasional treat"  suggestion6="Watch when you drink" suggestion7="Try smoothies and shakes" /></div>
+      <div className="BoxIcon"><ImgComponents src="/heartbeat.png" imgheight="100px" imgwidth="100px" /></div>
+      <div><SuggestionBox Boxheight="310px" Boxwidth="380px" title="Tips to boost your weight safely:" suggestion1="Eat frequently" suggestion2="Choose nutrient-rich foods" suggestion3="Exercise" suggestion4="Sleep schedule" suggestion5="Have an occasional treat"  suggestion6="Watch when you drink" suggestion7="Try smoothies and shakes" h3color="#6C9083" pfontsize="18px"/></div>
     </div>
     <div className="box">
-      <div className="BoxIconYoga"><ImgComponents src="/yoga.png" imgheight="110px" imgwidth="110px" /></div>
-      <div><SuggestionBox Boxheight="300px" Boxwidth="300px" title="Yoga Asanas for Gain Weight:" suggestion1="Being underweight can lead to many health problems, including weakened immunity. Yoga enhances the circulation of oxygen and blood, and this helps improve the nutrient absorption. " listyle="none"/></div>
+      <div className="BoxIconYoga"><ImgComponents src="/yoga.png" imgheight="100px" imgwidth="100px" /></div>
+      <div><SuggestionBox Boxheight="260px" Boxwidth="380px" title="Yoga Asanas for Gain Weight:" suggestion1="Being underweight can lead to many health problems, including weakened immunity. Yoga enhances the circulation of oxygen and blood, and this helps improve the nutrient absorption. " listyle="none"/></div>
     </div>
     </div>
-    <div className="Back">
+    <div className="home">
         <BtnComponent text="Back to home" address="/welcomepage"/>
     </div>
     

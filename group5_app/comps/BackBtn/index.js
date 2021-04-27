@@ -8,11 +8,12 @@ const BackButtonInput = styled.div`
     font-family: 'Sansita', sans-serif;
     font-size: ${props=>props.fs};
     cursor: pointer;
+    
 `;
 
 const BackBtn = ({
     text="Back",
-    fontsize="25px",
+    fontsize="20px",
     address="/.."
 })=>{
     const router = useRouter();

@@ -8,34 +8,27 @@ const PageLayoutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:400px;
-    height:750px;
     background-color: #F2F0EB;
-    border: 55px solid #9FCBBB;
-    border-left: 15px solid #9FCBBB; 
-    border-right: 15px solid #9FCBBB;
-    border-radius: 45px;
+    width:100vw;
+    min-height: 100vh;
 
-    .logo{
-      display:flex;
-      flex-grow: 0.1;
-      justify-content:center;
-      align-items:space-between;
+    .text {
+        flex-grow: 1;
     }
 
     .picture{
       display:flex;
-      flex-grow:0.2;
-      border-radius:50%;
+      flex-grow:1;
     }
 
     .slogan{
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      flex-grow: 1;
     }
 
     .btn{
       display:flex;
-      flex-grow: 0.5;
+      flex-grow: 5;
       flex-direction:column;
     }
 
@@ -47,19 +40,19 @@ const PageLayoutContainer = styled.div`
 
 export default function Home() {
     return <PageLayoutContainer>
-      <div>
-        <TextComponent Subtitle="NUTRITIONAL SPACES" Hint="" h3fontsize="30px"/>
+      <div className="text">
+        <TextComponent Subtitle="NUTRITIONAL SPACES" Hint="" h3fontsize="26px"/>
         </div>
       <div className="picture">
-        <ImgComponents src="/mainpic.jpeg" borderradius="50%" imgheight="280px" imgwidth="280px" />
+        <ImgComponents src="/mainpic.jpeg" borderradius="50%" imgheight="270px" imgwidth="270px" />
         </div>
       <div className="slogan">
-        <div ><TextComponent Subtitle="BETTER FOOD," Hint="" h3color="#D7921E" h3fontsize="30px"/></div>
-        <div><TextComponent Subtitle="BETTER EAT," Hint=""  h3color="#D7921E" h3fontsize="30px"/></div>
-        <div><TextComponent Subtitle="BETTER YOU!" Hint=""  h3color="#D7921E" h3fontsize="30px"/></div>
+        <div ><TextComponent Subtitle="BETTER FOOD," Hint="" h3color="#D7921E" h3fontsize="25px"/></div>
+        <div><TextComponent Subtitle="BETTER HEALTH," Hint=""  h3color="#D7921E" h3fontsize="25px"/></div>
+        <div><TextComponent Subtitle="BETTER YOU!" Hint=""  h3color="#D7921E" h3fontsize="25px"/></div>
       </div>
       <div className="btn">
-      <div><BtnComponent address="/agerange"/></div>
+      <div><BtnComponent address="/Inforpage" width="200px" height="60px;"/></div>
     </div>
     </PageLayoutContainer>
   }

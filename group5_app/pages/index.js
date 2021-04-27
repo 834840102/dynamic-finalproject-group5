@@ -7,7 +7,7 @@ const PageLayoutContainer = styled.div`
     align-items: center;
     justify-content: center;
     width:100vw;
-    height:100vh;
+    min-height:100vh;
     background-color: #F2F0EB;
     animation: move 15s infinite;
   }
@@ -30,6 +30,6 @@ const PageLayoutContainer = styled.div`
 
 export default function Home(){
     return <PageLayoutContainer>
-        <LogoComponent width="120px" height="170px" address="/welcomepage"/>
+        <LogoComponent width="140px" height="190px" address="/welcomepage"/>
         </PageLayoutContainer>
 } 
