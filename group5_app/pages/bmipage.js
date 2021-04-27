@@ -59,7 +59,7 @@ const BMIContainer = styled.div`
             <LogoComponent address="/welcomepage"/>
             </div>
         <div className="text">
-            <TextComponent Subtitle="Your BMI[Body Mass Index]" src="/exclamation_mark.png" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
+            <TextComponent Subtitle="Your BMI[Body Mass Index]" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
             <div className="myImage">
               <img src="/exclamation_mark.png" width="22px" height="22px"></img>
             </div>
