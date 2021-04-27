@@ -44,7 +44,7 @@ const BMIContainer = styled.div`
         display: block;
         padding: 10px;
         position: absolute;
-        width: 225px;
+        width: 325px;
         height: 149px;
         background: #FFFFFF;
         border: 1px solid #6C9083;
@@ -61,7 +61,7 @@ const BMIContainer = styled.div`
         <div className="text">
             <TextComponent Subtitle="Your BMI[Body Mass Index]" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
             <div className="myImage">
-              <img src="/exclamation_mark.png" width="22px" height="22px"></img>
+              <img src="/ex_mark.png" width="22px" height="22px"></img>
             </div>
             <div className="hide">
               <div className="info">
