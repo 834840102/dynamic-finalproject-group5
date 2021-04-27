@@ -10,6 +10,7 @@ const ImgComponentsCont = styled.img`
     width:${props=>props.imgwidth};
     height:${props=>props.imgheight};
     border-radius: ${props=>props.imgbr};
+    opacity:0.3;
 `;
 
 const ImgComponents = ({
