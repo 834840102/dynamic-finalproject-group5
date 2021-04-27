@@ -36,37 +36,20 @@ const BMIContainer = styled.div`
         flex-grow: 0.5;
       }
 
-      .image_hi {
-        opacity: 1;
-        display: block;
-        transition: .5s ease;
-        backface-visibility: hidden;
-      }
-
       .hide {
-        transition: .5s ease;
-        opacity: 0;
+        display: none;
+      }
+          
+      .myImage:hover + .hide {
+        display: block;
+        padding: 10px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-      }
-
-      .image_hi:hover .image {
-        opacity: 0.3;
-      }
-      
-      .image_hi:hover .hide {
-        opacity: 1;
-      }
-      
-      .info {
-        background-color: #4CAF50;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
+        width: 225px;
+        height: 149px;
+        background: #FFFFFF;
+        border: 1px solid #6C9083;
+        box-sizing: border-box;
+        border-radius: 10px;
       }
     `;
 
@@ -77,11 +60,13 @@ const BMIContainer = styled.div`
             </div>
         <div className="text">
             <TextComponent Subtitle="Your BMI[Body Mass Index]" src="/exclamation_mark.png" Hint="If you’re not sure about your BMI, you can click here to caculate your BMI" />
-            <div className="image_hi">
+            <div className="myImage">
               <img src="/exclamation_mark.png" width="22px" height="22px"></img>
             </div>
             <div className="hide">
-              <div className="info">text</div>
+              <div className="info">
+                Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+              </div>
             </div>
         </div>
         <div>
