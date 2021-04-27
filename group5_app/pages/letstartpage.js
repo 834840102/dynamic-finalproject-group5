@@ -45,6 +45,11 @@ const PageLayoutContainer = styled.div`
     .startbtn{
       display:flex;
     }
+
+    button:hover{
+      background-color: #6C9083;
+      cursor: pointer;
+    }
 `;
 
 export default function Home() {

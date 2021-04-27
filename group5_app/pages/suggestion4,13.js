@@ -48,6 +48,11 @@ const PageLayoutContainer = styled.div`
       background-color: #6C9083;
       cursor: pointer;
     }
+
+    button:hover{
+      background-color: #6C9083;
+      cursor: pointer;
+    }
 `;
 
 export default function Home() {
