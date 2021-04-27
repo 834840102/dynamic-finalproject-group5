@@ -12,13 +12,12 @@ const PageLayoutContainer = styled.div`
     border-radius: 45px;
 `;
 
-const PageLayoutCont = styled.div`
-`;
+
 
 const PageLayout = ({
 }) =>{
     return <PageLayoutContainer>
-                <PageLayoutCont />
+                
             </PageLayoutContainer>
 }
 

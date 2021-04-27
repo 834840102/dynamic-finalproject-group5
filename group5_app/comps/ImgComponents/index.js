@@ -3,20 +3,23 @@ import styled from 'styled-components';
 
 
 const ImgComponentsBox = styled.div`
-    width:110px;
-    height:110px;
+
 `;
 
 const ImgComponentsCont = styled.img`
-    width:110px;
-    height:110px;
+    width:${props=>props.imgwidth};
+    height:${props=>props.imgheight};
+    border-radius: ${props=>props.imgbr};
 `;
 
 const ImgComponents = ({
-    src="/body-scale.png"
+    src="/body-scale.png",
+    borderradius = 10,
+    imgwidth = 110,
+    imgheight = 110,
 }) =>{
     return <ImgComponentsBox>
-                <ImgComponentsCont src={src} />
+                <ImgComponentsCont src={src} imgbr={borderradius} imgheight={imgheight} imgwidth={imgwidth} />
             </ImgComponentsBox>
 }
 
