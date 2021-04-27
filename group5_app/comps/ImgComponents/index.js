@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import {useRouter} from 'next/router';
 
 const ImgComponentsBox = styled.div`
 
@@ -17,9 +17,11 @@ const ImgComponents = ({
     borderradius = 10,
     imgwidth = 110,
     imgheight = 110,
+    address = "",
 }) =>{
+    const router = useRouter()
     return <ImgComponentsBox>
-                <ImgComponentsCont src={src} imgbr={borderradius} imgheight={imgheight} imgwidth={imgwidth} />
+                <ImgComponentsCont  onClick={()=>router.push(address)} src={src} imgbr={borderradius} imgheight={imgheight} imgwidth={imgwidth} />
             </ImgComponentsBox>
 }
 

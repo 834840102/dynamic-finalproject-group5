@@ -3,17 +3,33 @@ import styled from 'styled-components'
 import LogoComponent from '../comps/LogoComponent'
 
 const PageLayoutContainer = styled.div`
-    display:flex;
-    justify-content:center;
+    display: flex;
     align-items: center;
-    box-sizing: border-box;
-    flex-direction: column;
+    justify-content: center;
     width:100vw;
     min-height:100vh;
-    background-color: #F2F0EB; 
+    background-color: #F2F0EB;
+    animation: move 15s infinite;
+  }
+  
+  @keyframes move {
+    0% {background-color: #F3F3E7;}
+    17% {background-color: #abffdf;}
+    34% {background-color: #B2C4CB;}
+    50% {background-color: #FCC0C5;}
+    67% {background-color: #B2C4CB;}
+    84% {background-color: #abffdf;}
+    100% {background-color: #F3F3E7;}
+  }
+
+  img:hover{
+      cursor:pointer;
+  }
 `;
 
 
 export default function Home(){
-    return <PageLayoutContainer><LogoComponent width="200px" height="260px" address="/welcomepage"/></PageLayoutContainer>
+    return <PageLayoutContainer>
+        <LogoComponent width="140px" height="190px" address="/welcomepage"/>
+        </PageLayoutContainer>
 } 

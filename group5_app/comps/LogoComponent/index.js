@@ -5,11 +5,12 @@ import {useRouter} from 'next/router';
 const LogoImg = styled.img`
     width:${props=>props.width};
     height:${props=>props.height};
+    cursor: pointer;
 `; 
 
 const LogoComponent = ({
-    width="43px",
-    height="61px",
+    width="53px",
+    height="70px",
     src="/Logo.png",
     address = "/home"
 }) =>{

@@ -12,8 +12,12 @@ const PageLayoutContainer = styled.div`
     justify-content: center;
     align-items: center;
     width:100vw;
-    -min-height:100vh;
+    min-height:100vh;
     background-color: #F2F0EB;
+
+    .logo{
+      margin-top: 30px;
+    }
 
     .back {
       display: flex;
@@ -52,12 +56,7 @@ const PageLayoutContainer = styled.div`
 
     .home{
       display:flex;
-      margin-top: 10%;
-    }
-
-    button:hover{
-      background-color: #6C9083;
-      cursor: pointer;
+      margin-top: 5%;
     }
 `;
 
@@ -68,17 +67,17 @@ export default function Home() {
       </div>
 
     <div className="suggestiontext">
-      <TextComponent Subtitle="SUGGESTION " Hint="According to the BMI, you are currently underweight." h3fontsize="30px" h3color="#6C9083" pfontsize="22px" pfontweight="700" />
-      <TextComponent Subtitle="" Hint="We recommend not opting for weight loss, as being underweight can cause as many health concerns for an individual as overweight can occur. You should gain weight for better health." pfontsize="22px" />
+      <TextComponent Subtitle="SUGGESTION " Hint="According to the BMI, you are currently underweight." h3fontsize="24px" h3color="#6C9083" pfontsize="18px" pfontweight="700" />
+      <TextComponent Subtitle="" Hint="We recommend not opting for weight loss, as being underweight can cause as many health concerns for an individual as overweight can occur. You should gain weight for better health." pfontsize="18px" />
     </div>
     <div className="SuggestionBox">
     <div className="box">
-      <div className="BoxIcon"><ImgComponents src="/heartbeat.png" imgheight="130px" imgwidth="130px" /></div>
-      <div><SuggestionBox Boxheight="380px" Boxwidth="400px" title="Tips to boost your weight safely:" suggestion1="Eat frequently" suggestion2="Choose nutrient-rich foods" suggestion3="Exercise" suggestion4="Sleep schedule" suggestion5="Have an occasional treat"  suggestion6="Watch when you drink" suggestion7="Try smoothies and shakes" h3color="#6C9083" pfontsize="22px"/></div>
+      <div className="BoxIcon"><ImgComponents src="/heartbeat.png" imgheight="100px" imgwidth="100px" /></div>
+      <div><SuggestionBox Boxheight="310px" Boxwidth="380px" title="Tips to boost your weight safely:" suggestion1="Eat frequently" suggestion2="Choose nutrient-rich foods" suggestion3="Exercise" suggestion4="Sleep schedule" suggestion5="Have an occasional treat"  suggestion6="Watch when you drink" suggestion7="Try smoothies and shakes" h3color="#6C9083" pfontsize="18px"/></div>
     </div>
     <div className="box">
-      <div className="BoxIconYoga"><ImgComponents src="/yoga.png" imgheight="130px" imgwidth="130px" /></div>
-      <div><SuggestionBox Boxheight="360px" Boxwidth="380px" title="Yoga Asanas for Gain Weight:" suggestion1="Being underweight can lead to many health problems, including weakened immunity. Yoga enhances the circulation of oxygen and blood, and this helps improve the nutrient absorption. " listyle="none"/></div>
+      <div className="BoxIconYoga"><ImgComponents src="/yoga.png" imgheight="100px" imgwidth="100px" /></div>
+      <div><SuggestionBox Boxheight="260px" Boxwidth="380px" title="Yoga Asanas for Gain Weight:" suggestion1="Being underweight can lead to many health problems, including weakened immunity. Yoga enhances the circulation of oxygen and blood, and this helps improve the nutrient absorption. " listyle="none"/></div>
     </div>
     </div>
     <div className="home">
