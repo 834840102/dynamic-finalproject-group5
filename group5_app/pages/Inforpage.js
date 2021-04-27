@@ -43,6 +43,11 @@ const PageLayoutContainer = styled.div`
       flex-grow: 3;
       flex-direction:column;
     }
+
+    button:hover{
+      background-color: #6C9083;
+      cursor: pointer;
+    }
 `;
 
 export default function Home() {
