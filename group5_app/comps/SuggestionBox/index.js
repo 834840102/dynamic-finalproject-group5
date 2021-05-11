@@ -4,10 +4,9 @@ import styled from 'styled-components';
 const SuggestionBoxCont = styled.div`
     display:flex;
     flex-direction: column;
-    align-items: start;
     width:${props=>props.Boxwidth};
     height:${props=>props.Boxheight};
-    padding: 30px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     border-radius:10px;
     border: 1px solid #6C9083;
     background: url("${props=>props.bgsrc}") ${props=>props.bgimg};
@@ -30,13 +29,11 @@ const SuggestionBoxSub = styled.h4`
     color: #6C9083;
 `;
 
-
 const SuggestionBox = ({
     Boxwidth=300,
     Boxheight=300,
     bgimg = "",
     bgsrc = "",
-    title="Tips",
     suggestion1="",
     suggestion2="",
     suggestion3="",
@@ -48,7 +45,6 @@ const SuggestionBox = ({
 
 })=>{
     return<SuggestionBoxCont Boxheight={Boxheight} Boxwidth={Boxwidth} bgsrc={bgsrc} bgimg={bgimg}>
-        <SuggestionBoxSub listyle={listyle}>{title}</SuggestionBoxSub>
         <SuggestionBoxText listyle={listyle}>{suggestion1}</SuggestionBoxText>
         <SuggestionBoxText listyle={listyle}>{suggestion2}</SuggestionBoxText>
         <SuggestionBoxText listyle={listyle}>{suggestion3}</SuggestionBoxText>

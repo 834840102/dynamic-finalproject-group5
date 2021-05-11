@@ -3,7 +3,7 @@ import TextComponent from "../comps/TextComponent";
 import BackBtn from "../comps/BackBtn";
 import BtnComponent from "../comps/BtnComponent";
 import ImgComponents from "../comps/ImgComponents";
-
+import {Router, useRouter} from 'next/router';
 
 const PageLayoutContainer = styled.div`
     display:flex;

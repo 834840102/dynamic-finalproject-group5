@@ -23,7 +23,7 @@ const GoalBtnImg = styled.img`
 `;
 
 const GoalBtnText = styled.p`
-    font-size: 20px;
+    font-size: 18px;
     font-weight:normal;
     font-family: 'Sansita', sans-serif;
 `;

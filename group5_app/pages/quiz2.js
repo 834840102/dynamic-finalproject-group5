@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import TextComponent from "../comps/TextComponent";
-import LogoComponent from "../comps/LogoComponent";
 import BackBtn from "../comps/BackBtn";
 import BtnComponent from "../comps/BtnComponent";
 import ImgComponents from "../comps/ImgComponents";

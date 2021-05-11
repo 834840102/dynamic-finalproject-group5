@@ -1,9 +1,17 @@
 import React from 'react';
-import QuestionPage from '../comps/question';
+import Question from '../comps/Question';
 
 export default {
-    title:"Example/QuestionPage",
-    component:<QuestionPage />
+    title:"Example/Question",
+    component:<Question />
 }
 
-export const MyQuestionPage = () => <QuestionPage />
+export const MyQuestionPage = () => <Question />
+export const MyButtonCustomColor = () => <Question bgcolor="white"/>
+export const MyButtonCustomTexts = () => (
+    <Question
+        firsttext="Everyday"
+        secondtext="None"
+        thridtext="Sometimes"
+    />
+)

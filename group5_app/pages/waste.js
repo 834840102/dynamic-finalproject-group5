@@ -22,10 +22,14 @@ const PageLayoutContainer = styled.div`
       cursor:pointer;
     }
 
+    .box{
+      margin-bottom:40px;
+    }
+
     .text{
       display:flex;
       flex-direction: column;
-      margin-top: -5%;
+      margin-top: -2%;
     }
 
     .text2{
@@ -45,14 +49,14 @@ const PageLayoutContainer = styled.div`
       display:flex;
       flex-direction:column;
       cursor: pointer;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
 
     .MyImg1{
       display:flex;
       flex-direction:column;
       cursor: pointer;
-      margin-bottom:20px;
+      margin-bottom:30px;
     }
 
     .box {
@@ -68,7 +72,7 @@ const PageLayoutContainer = styled.div`
         display:flex;
         flex-direction:column;
         cursor: pointer;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .MyImg2:hover + .box{
@@ -108,7 +112,7 @@ export default function Home() {
       <ImgComponents src="trash.png" imgheight="110px" imgwidth="110px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="100px" Boxwidth="320px" title="" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
+      <SuggestionBox display="none" Boxheight="100px" Boxwidth="320px" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
     </div>
 
 
@@ -119,7 +123,7 @@ export default function Home() {
       <ImgComponents src="plastic.png" imgheight="100px" imgwidth="100px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="240px" Boxwidth="320px" title="" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
+      <SuggestionBox display="none" Boxheight="240px" Boxwidth="320px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
     </div>
 
     <div className="text4">
@@ -129,7 +133,7 @@ export default function Home() {
       <ImgComponents src="contamination.png" imgheight="100px" imgwidth="100px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="190px" Boxwidth="320px" title="" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
+      <SuggestionBox display="none" Boxheight="190px" Boxwidth="320px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
     </div>
  
  

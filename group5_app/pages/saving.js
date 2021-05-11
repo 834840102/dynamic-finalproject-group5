@@ -6,7 +6,6 @@ import BackBtn from  '../comps/BackBtn'
 import BtnComponent from "../comps/BtnComponent"
 import SuggestionBox from '../comps/SuggestionBox'
 
-
 const PageLayoutContainer = styled.div`
     display:flex;
     flex-direction: column;
