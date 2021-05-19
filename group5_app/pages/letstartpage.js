@@ -63,8 +63,8 @@ export default function Home() {
       <LogoComponent address="/welcomepage"/>
       </div>
     <div className="text">
-      <TextComponent Subtitle = "Great! Now you know a lot more about healthy diet" Hint="" h3fontsize="22px" h3color="#33393E"/>
-      <TextComponent Subtitle = "Ready to find out a proper diet for you? " Hint="" h3fontsize="22px" h3color="#33393E" pfontweight="bold"/> 
+      <TextComponent Subtitle = "Great! Now you know a lot more about healthy diet" Hint="" h3color="#33393E"/>
+      <TextComponent Subtitle = "Ready to find out a proper diet for you? " Hint=""  h3color="#33393E" pfontweight="bold"/> 
     </div>
     <div className="MyImg">
       <ImgComponents src="meal.png" imgheight="260px" imgwidth="260px"/>
