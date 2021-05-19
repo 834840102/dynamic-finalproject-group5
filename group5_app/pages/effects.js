@@ -42,33 +42,34 @@ const PageLayoutContainer = styled.div`
       display:flex;
       flex-direction:column;
       cursor: pointer;
+      margin-top:-50px;
     }
+   
     .MyImg1{
       display:flex;
       flex-direction:column;
       cursor: pointer;
       margin-bottom:20px;
     }
-    .box {
-        opacity:0;
+    .box1{
         margin-top: -10px;
+        margin-bottom: 20px;
+        animation: move 3s;
+        position: relative;
     }
-    .MyImg1:hover + .box{
-      opacity:1;
-      animation: move 3s;
-      position: relative;
-    }
-    
+     
     .MyImg2{
         display:flex;
         flex-direction:column;
         cursor: pointer;
         margin-bottom: 20px;
     }
-    .MyImg2:hover + .box{
+    .box2{
       opacity:1;
-      animation: move 3s;
-      position: relative;
+      animation: move 6s;
+      position: relative; 
+      margin-top: -10px;
+      margin-bottom: 20px;
     }
     .MyImg3{
         display:flex;
@@ -76,22 +77,26 @@ const PageLayoutContainer = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
     }
-    .MyImg3:hover + .box{
+    .box3{
       opacity:1;
-      animation: move 3s;
+      animation: move 9s;
       position: relative;
+      margin-top: -10px;
+      margin-bottom: 20px;
     }
     .MyImg4{
-        display:flex;
-        flex-direction:column;
-        cursor: pointer;
-        margin-bottom: 20px;
-    }
-    .MyImg4:hover + .box{
-      opacity:1;
-      animation: move 3s;
-      position: relative;
-    }
+      display:flex;
+      flex-direction:column;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  .box4{
+    opacity:1;
+    animation: move 12s;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
     .btn{
         display:flex;
         flex-grow: 5;
@@ -104,8 +109,8 @@ const PageLayoutContainer = styled.div`
         cursor: pointer;
       }
       @keyframes move {
-        from {margin-right: -20%; }
-        to {margin-right: 0; }
+        from {left: -50%; opacity:0;}
+        to {left: 0; opactiy:1;}
       }
 `;
 
@@ -136,7 +141,7 @@ export default function Home() {
     <div className="MyImg1">
       <ImgComponents src="stomach.png" imgheight="70px" imgwidth="70px"/>
     </div>
-    <div className="box">
+    <div className="box1">
       <SuggestionBox Boxheight="150px" Boxwidth="300px" title="" listyle="none" suggestion1="Fastfood contains a lot of calories and cholesterol, it will cause high blood pressure. If you want to burn off excess energy, you need to increase physical activity and exercise regularly, but fast food makes people more stagnant" />
     </div>
 
@@ -147,7 +152,7 @@ export default function Home() {
     <div className="MyImg2">
       <ImgComponents src="heart.png" imgheight="70px" imgwidth="70px"/>
     </div>
-    <div className="box">
+    <div className="box2">
       <SuggestionBox Boxheight="195px" Boxwidth="300px" title="" listyle="none" suggestion1="Junk foods have been identified as a major cause of heart diseases including myocardial infarction, cardiac arrest, and atherosclerosis. This is due to the fact that junk food contains excessive amount of low-density lipoproteins and cholesterol that get deposited on the inner linings of blood vessels." />
     </div>
  
@@ -157,7 +162,7 @@ export default function Home() {
     <div className="MyImg3">
       <ImgComponents src="brain.png" imgheight="70px" imgwidth="70px"/>
     </div>
-    <div className="box">
+    <div className="box3">
       <SuggestionBox Boxheight="220px" Boxwidth="300px" title="" listyle="none" suggestion1="Junk foods are high in saturated fats and Omega-6 fatty acids, individuals are likely to get depressed. When a person consumes junk food in excess, body finds difficult to digest and needs to spend high amount of blood and enzymes as a result, the person feels drowsy and suffers with reduced concentration." />
     </div>
 
@@ -167,7 +172,7 @@ export default function Home() {
     <div className="MyImg4">
       <ImgComponents src="balance.png" imgheight="70px" imgwidth="70px"/>
     </div>
-    <div className="box">
+    <div className="box4">
       <SuggestionBox Boxheight="170px" Boxwidth="300px" title="" listyle="none" suggestion1="When you eat too much junk food, you neglect to eat nutritious food like fruits and vegetables and other wholesome food. This means that your body does not get the necessary nutrition it needs and you end up with a weak immune system." />
     </div>
 
