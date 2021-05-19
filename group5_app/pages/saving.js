@@ -118,7 +118,7 @@ export default function Home() {
       <ImgComponents src="https://i.pinimg.com/originals/6c/02/af/6c02af8fd72ff6f43cb0234e5e6e3c90.gif" imgheight="300px" imgwidth="400px"/>
     </div>
     <div className="text">
-      <TextComponent Subtitle = "Wasting money" Hint="" h3fontsize="22px"/>
+      <TextComponent Subtitle = "Wasting money" Hint=""/>
     </div>
     <div className="text2">
       <TextComponent Subtitle = "Why is cooking more beneficial than eating fast food habits?" Hint="Eating at home allows you to control the ingredients in the food, instead of using natural ingredients because processed foods are unsafe for health." h3fontsize="20px" h3color="#33393E"/>
@@ -126,7 +126,7 @@ export default function Home() {
     
     
     <div className="text4">
-      <TextComponent Subtitle = "Waste money" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Waste money" Hint=""  h3color="#33393E"/>
     </div>
     <div className="MyImg1">
       <ImgComponents src="/wastemoney.png" imgheight="80px" imgwidth="80px"/>
@@ -136,7 +136,7 @@ export default function Home() {
     </div>
 
     <div className="text4">
-      <TextComponent Subtitle = "Low nutritional value" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Low nutritional value" Hint=""  h3color="#33393E"/>
     </div>
     <div className="MyImg2">
       <ImgComponents src="/fastfood.png" imgheight="80px" imgwidth="80px"/>
@@ -146,7 +146,7 @@ export default function Home() {
     </div>
 
     <div className="text4">
-      <TextComponent Subtitle = "Cost more than traditional meal" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Cost more than traditional meal" Hint=""  h3color="#33393E"/>
     </div>
     <div className="MyImg3">
       <ImgComponents src="/save-money.png" imgheight="80px" imgwidth="80px"/>
