@@ -61,7 +61,7 @@ export default function Home() {
         <LogoComponent address="/welcomepage"/>
       </div>
       <div>
-        <TextComponent Subtitle="Your BMI[Body Mass Index]" Hint="" h3fontsize="22px" />
+        <TextComponent Subtitle="Your BMI[Body Mass Index]" Hint=""/>
       </div>
 
        <div className="img">  
