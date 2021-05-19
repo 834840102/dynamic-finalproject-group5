@@ -22,47 +22,38 @@ const PageLayoutContainer = styled.div`
       margin-right: 80%;
       cursor:pointer;
     }
-
-    .box{
-      margin-bottom:40px;
-    }
-
     .text{
       display:flex;
       flex-direction: column;
       margin-top: -2%;
     }
-
     .text2{
       display:flex;
       flex-direction: column;
-      margin-bottom: 4%;
+      margin-bottom: 5%;
     }
-
     .text4{
         display:flex;
         flex-direction: column;
         margin-bottom: 0%;
       }
   
-
     .MyImg{
       display:flex;
       flex-direction:column;
       cursor: pointer;
       margin-bottom: 50px;
     }
-
     .MyImg1{
       display:flex;
       flex-direction:column;
       cursor: pointer;
       margin-bottom:30px;
     }
-
     .box {
       opacity:0;
-      margin-top: 20px;
+      margin-top: -25px;
+      margin-bottom: 5px;
     }
     
     .MyImg1:hover + .box{
@@ -70,21 +61,17 @@ const PageLayoutContainer = styled.div`
       animation: move 3s;
       position: relative;
     }
-
     .MyImg2{
         display:flex;
         flex-direction:column;
         cursor: pointer;
         margin-bottom: 30px;
     }
-
     .MyImg2:hover + .box{
       opacity:1;
       animation: move 3s;
       position: relative;
     }
-
-
     .btn{
         display:flex;
         flex-grow: 5;
@@ -96,7 +83,6 @@ const PageLayoutContainer = styled.div`
         background-color: #6C9083;
         cursor: pointer;
       }
-
       @keyframes move {
         from {margin-right: -20%; }
         to {margin-right: 0; }
@@ -110,7 +96,7 @@ export default function Home() {
       <BackBtn address="/saving"/>
     </div>
     <div className="MyImg">
-      <ImgComponents src="https://media2.giphy.com/media/H83GY69pGeNOpZmpkv/giphy.gif" imgheight="300px" imgwidth="300px"/>
+      <ImgComponents src="https://media2.giphy.com/media/H83GY69pGeNOpZmpkv/giphy.gif" imgheight="280px" imgwidth="280px"/>
     </div>
     <div className="text">
       <TextComponent Subtitle = "How does it effects to the environment?" Hint="From plastics in our waterways to the toxic byproducts of manufacturing, the environmental impact of food packaging is enormous." h3fontsize="22px"/>
@@ -123,7 +109,7 @@ export default function Home() {
       <ImgComponents src="trash.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="100px" Boxwidth="320px" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
+      <SuggestionBox display="none" Boxheight="80px" Boxwidth="300px" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
     </div>
 
 
@@ -134,7 +120,7 @@ export default function Home() {
       <ImgComponents src="plastic.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox Boxheight="240px" Boxwidth="320px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
+      <SuggestionBox Boxheight="205px" Boxwidth="300px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
     </div>
 
     <div className="text4">
@@ -144,12 +130,12 @@ export default function Home() {
       <ImgComponents src="contamination.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox Boxheight="190px" Boxwidth="320px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
+      <SuggestionBox Boxheight="175px" Boxwidth="300px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
     </div>
  
  
     <div className="btn">
-      <BtnComponent onClick={()=>router.push("/Option/bmis")} width="200px" height="60px" text="Take a quiz"/>
+      <BtnComponent onClick={()=>router.push("/Option/bmis")} width="200px" height="65px" text="Take a quiz"/>
     </div>
   </PageLayoutContainer>
 }
