@@ -128,7 +128,7 @@ export default function Home() {
 
 
     <div className="text4">
-      <TextComponent Subtitle = "Water Contamination" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Water Contamination" Hint=""  h3color="#33393E"/>
     </div>
     <div className="MyImg2">
       <ImgComponents src="plastic.png" imgheight="80px" imgwidth="80px"/>
@@ -138,7 +138,7 @@ export default function Home() {
     </div>
 
     <div className="text4">
-      <TextComponent Subtitle = "Environmental pollution" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Environmental pollution" Hint=""  h3color="#33393E"/>
     </div>
     <div className="MyImg2">
       <ImgComponents src="contamination.png" imgheight="80px" imgwidth="80px"/>
