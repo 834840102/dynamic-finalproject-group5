@@ -129,7 +129,7 @@ export default function Home() {
       <TextComponent Subtitle = "Waste money" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg1">
-      <ImgComponents src="/wastemoney.png" imgheight="100px" imgwidth="100px"/>
+      <ImgComponents src="/wastemoney.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox Boxheight="160px" Boxwidth="320px" title="" listyle="none" suggestion1=" Eating dinner at a fast-food chain isn't cheap. It costs about $30 for a family of four to have dinner at their local McDonald's!  You can also save a lot of money by growing your own vegetables and fruits and cook it." />
@@ -139,7 +139,7 @@ export default function Home() {
       <TextComponent Subtitle = "Low nutritional value" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg2">
-      <ImgComponents src="/fastfood.png" imgheight="100px" imgwidth="100px"/>
+      <ImgComponents src="/fastfood.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox Boxheight="130px" Boxwidth="320px" title="" listyle="none" suggestion1="Traditional meals with a variety of fresh, clean foods bring health. While fast food is just a waste of money because it has no nutritional value and brings many health risks." />
@@ -149,7 +149,7 @@ export default function Home() {
       <TextComponent Subtitle = "Cost more than traditional meal" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg3">
-      <ImgComponents src="/save-money.png" imgheight="100px" imgwidth="100px"/>
+      <ImgComponents src="/save-money.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox display="none" Boxheight="230px" Boxwidth="320px" title="" listyle="none" suggestion1="Based on prices at a superstore grocery store, a McDonald's meal is $14 more than a home-cooked meal. In addition to saving money, home-cooked meals are much healthier. Compare that same meal to an even cheaper dinner of rice and beans with bacon, peppers, and onions to save more than $18." />
