@@ -81,7 +81,7 @@ export default function Home() {
       <ImgComponents src="pizza-slice.png" imgheight="110px" imgwidth="110px" address="/infor1"/>
     </div>
     <div>
-      <TextComponent Subtitle = " Why should not eat fast food" Hint="" h3color="#33393E" "/>
+      <TextComponent Subtitle = " Why should not eat fast food" Hint="" h3color="#33393E" />
     </div>
     <div className="MyImg2">
       <ImgComponents src="diet 1.png" imgheight="110px" imgwidth="110px" address="/Option/bmis"/>
