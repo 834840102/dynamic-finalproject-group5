@@ -134,18 +134,18 @@ export default function Home() {
       <ImgComponents src="https://i.pinimg.com/originals/22/32/fb/2232fb9bbcef1d760e088a004ffe6bf0.gif" imgheight="300px" imgwidth="400px"/>
     </div>
     <div className="text">
-      <TextComponent Subtitle = "The rise of the health conscious fast food consumer" Hint="" h3fontsize="22px"/>
+      <TextComponent Subtitle = "The rise of the health conscious fast food consumer" Hint=""/>
     </div>
     <div className="text2">
-      <TextComponent Subtitle = "" Hint="Consuming too much fast food will lead to an imbalance in nutrition and cause the body to absorb some harmful substances during processing affecting health." pfontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "" Hint="Consuming too much fast food will lead to an imbalance in nutrition and cause the body to absorb some harmful substances during processing affecting health." h3color="#33393E"/>
     </div>
     <div className="text3">
-      <TextComponent Subtitle = "Why should not eat fast food?" Hint="" h3fontsize="20px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Why should not eat fast food?" Hint="" h3color="#33393E"/>
     </div>
 
 
     <div className="text4">
-      <TextComponent Subtitle = "Decreased digestive function" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Decreased digestive function" Hint="" h3color="#33393E"/>
     </div>
     <div className="MyImg1">
       <ImgComponents src="stomach.png" imgheight="80px" imgwidth="80px"/>
@@ -156,7 +156,7 @@ export default function Home() {
 
 
     <div className="text4">
-      <TextComponent Subtitle = "Heart Diseases" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Heart Diseases" Hint="" h3color="#33393E"/>
     </div>
     <div className="MyImg2">
       <ImgComponents src="heart.png" imgheight="80px" imgwidth="80px"/>
@@ -166,7 +166,7 @@ export default function Home() {
     </div>
  
     <div className="text4">
-      <TextComponent Subtitle = "Respiratory Sytem" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Respiratory Sytem" Hint="" h3color="#33393E"/>
     </div>
     <div className="MyImg3">
       <ImgComponents src="brain.png" imgheight="80px" imgwidth="80px"/>
@@ -176,7 +176,7 @@ export default function Home() {
     </div>
 
     <div className="text4">
-      <TextComponent Subtitle = "Poor Nutrition" Hint="" h3fontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Poor Nutrition" Hint="" h3color="#33393E"/>
     </div>
     <div className="MyImg4">
       <ImgComponents src="balance.png" imgheight="80px" imgwidth="80px"/>
