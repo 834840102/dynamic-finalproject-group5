@@ -56,7 +56,7 @@ export default function Home() {
       <LogoComponent address="/welcomepage"/>
     </div>
     <div className="text">
-      <TextComponent Subtitle="What is the goal of your diet plan?" Hint="By choosing your main goal, we’ll be able to help you create a suitable plan for you" h3fontsize="22px" pfontsize="18px"/>
+      <TextComponent Subtitle="Negative effects of fastfood" Hint="By choosing one of them, you can learn more knowledge about effects of fastfood" h3fontsize="18px" pfontsize="16px"/>
       </div>
     <div className="btn">
       <GoalBtn src="/burger.png" address="/" goal="Effects of fast food" address="/effects"/>
