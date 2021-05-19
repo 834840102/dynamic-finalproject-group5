@@ -55,7 +55,7 @@ const PageLayoutContainer = styled.div`
 
     .box {
         opacity:0;
-        margin-top: 20px;
+        margin-top: -10px;
     }
     
     .MyImg1:hover + .box{
@@ -132,7 +132,7 @@ export default function Home() {
       <ImgComponents src="/wastemoney.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox Boxheight="160px" Boxwidth="280px" title="" listyle="none" suggestion1=" Eating dinner at a fast-food chain isn't cheap. It costs about $30 for a family of four to have dinner at their local McDonald's!  You can also save a lot of money by growing your own vegetables and fruits and cook it." />
+      <SuggestionBox Boxheight="140px" Boxwidth="300px" title="" listyle="none" suggestion1=" Eating dinner at a fast-food chain isn't cheap. It costs about $30 for a family of four to have dinner at their local McDonald's!  You can also save a lot of money by growing your own vegetables and fruits and cook it." />
     </div>
 
     <div className="text4">
@@ -142,7 +142,7 @@ export default function Home() {
       <ImgComponents src="/fastfood.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox Boxheight="130px" Boxwidth="280px" title="" listyle="none" suggestion1="Traditional meals with a variety of fresh, clean foods bring health. While fast food is just a waste of money because it has no nutritional value and brings many health risks." />
+      <SuggestionBox Boxheight="130px" Boxwidth="300px" title="" listyle="none" suggestion1="Traditional meals with a variety of fresh, clean foods bring health. While fast food is just a waste of money because it has no nutritional value and brings many health risks." />
     </div>
 
     <div className="text4">
@@ -152,7 +152,7 @@ export default function Home() {
       <ImgComponents src="/save-money.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="230px" Boxwidth="280px" title="" listyle="none" suggestion1="Based on prices at a superstore grocery store, a McDonald's meal is $14 more than a home-cooked meal. In addition to saving money, home-cooked meals are much healthier. Compare that same meal to an even cheaper dinner of rice and beans with bacon, peppers, and onions to save more than $18." />
+      <SuggestionBox display="none" Boxheight="200px" Boxwidth="300px" title="" listyle="none" suggestion1="Based on prices at a superstore grocery store, a McDonald's meal is $14 more than a home-cooked meal. In addition to saving money, home-cooked meals are much healthier. Compare that same meal to an even cheaper dinner of rice and beans with bacon, peppers, and onions to save more than $18." />
     </div>
  
     <div className="btn">
