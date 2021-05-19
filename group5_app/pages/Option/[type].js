@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React, {useState} from 'react';
 import TextComponent from "../../comps/TextComponent";
 import BackBtn from "../../comps/BackBtn";
 import BtnComponent from "../../comps/BtnComponent";
@@ -21,7 +22,7 @@ const PageLayoutContainer = styled.div`
     justify-content: center;
     align-items: center;
     width:100vw;
-    height:130vh;
+    min-height:100vh;
     background-color: #FFFFFF;
 
     .back {
@@ -30,21 +31,35 @@ const PageLayoutContainer = styled.div`
         cursor:pointer;
         font-size: 18px;
       }
-
+    .Quiz{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .BtnTitle{
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
     .btn{
       display:flex;
       flex-grow: 1;
       flex-direction:column;
+      margin-top: -15px;
     }
     button:hover{
       background-color: #6C9083;
       cursor: pointer;
     }
+    button:focus{
+      background-color: #6C9083;
+    }
 `;
+
 
 export default function Options() {
   const router = useRouter();
   const {type} = router.query;
+
+  const [end, setEnd] = useState(false)
 
     var buttontexts = {
         option1:"",
@@ -80,45 +95,50 @@ export default function Options() {
   }
 
     const HandleClick = (text) =>{
-      alert(text)
+      //alert(text)
         if(type === "bmis"){
             options.bmis = text
+            router.push("/Option/fastfood")
         }
         if(type === "fastfood"){
             options.fastfood = text
+            router.push("/Option/exercise")
         }
         if(type === "exercise"){
             options.exercise = text
+        }
+        if(options.bmis !== null && options.fastfood !== null && options.exercise !== null){
+          setEnd(true)
         }
     }
 
     const HandleEnd = () =>{
         console.log(options)
         sessionStorage.setItem("options", JSON.stringify(options))
-        router.push("/result/result1")
+        router.push("/result/result")
     }
 
     return <PageLayoutContainer>
         <div className="back">
-      <BackBtn address="/welcomepage"/>
+      <BackBtn address="/started"/>
     </div>
-    <div>
-        <BtnComponent text="BMI" onClick={()=>router.push("/Option/bmis")} />
-        <BtnComponent text="Fastfood" onClick={()=>router.push("/Option/fastfood")} />
-        <BtnComponent text="Exercise" onClick={()=>router.push("/Option/exercise")} />
+    <div className="BtnTitle">
+        <BtnComponent text="BMI" onClick={()=>router.push("/Option/bmis")}  width="130px" height="60px"/>
+        <BtnComponent text="Fastfood" onClick={()=>router.push("/Option/fastfood")} width="130px" height="60px"/>
+        <BtnComponent text="Exercise" onClick={()=>router.push("/Option/exercise")} width="130px" height="60px"/>
     </div>
     <div className="MyImg">
-    <ImgComponents src={buttontexts.img} imgheight="300px" imgwidth="400px"/>
+    <ImgComponents src={buttontexts.img} imgheight="240px" imgwidth="360px"/>
     </div>
     
-      <div>
+      <div className="Quiz">
         <TextComponent Subtitle={buttontexts.title} Hint="" h3fontsize="22px" />
         </div>
         <div className="btn">
       <BtnComponent text={buttontexts.option1} onClick={()=>HandleClick(buttontexts.option1)}/>
       <BtnComponent text={buttontexts.option2} onClick={()=>HandleClick(buttontexts.option2)}/>
       <BtnComponent text={buttontexts.option3} onClick={()=>HandleClick(buttontexts.option3)}/>
-      <BtnComponent text="Next" onClick={HandleEnd}/>
+      {end === true && <BtnComponent text="Result" onClick={HandleEnd}/>}
     </div>
     </PageLayoutContainer>
 }
