@@ -61,7 +61,7 @@ export default function Home() {
           <LogoComponent address="/welcomepage"/>
       </div>
       <div className="text">
-        <TextComponent Subtitle="Unhealthy Diet  " Hint="" h3fontsize="24px" h3color="#6C9083" />
+        <TextComponent Subtitle="Unhealthy Diet  " Hint=""h3color="#6C9083" />
       </div>
     <div className="box">
       <div>
