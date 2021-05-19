@@ -186,7 +186,7 @@ export default function Home() {
     </div>
 
     <div className="btn">
-      <BtnComponent onClick={()=>router.push("/saving")} width="200px" height="65px" text="SAVING"/>
+      <BtnComponent onClick={()=>router.push("/saving")} width="200px" height="60px" text="SAVING"/>
     </div>
   </PageLayoutContainer>
 }
