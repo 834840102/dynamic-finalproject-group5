@@ -58,7 +58,7 @@ export default function Home() {
         <div ><TextComponent Subtitle="Promote Healthy Eating Habits!" Hint="Find out how fast food effect the body and how to improve healthy eating habits" h3color="#D7921E" h3fontsize="23px" pfontsize="20px"/></div>
       </div>
       <div className="btn">
-      <div><BtnComponent onClick={()=>router.push("/started")} width="180px" height="50px;"/></div>
+      <div><BtnComponent onClick={()=>router.push("/started")} width="200px" height="60px;"/></div>
     </div>
     </PageLayoutContainer>
   }
