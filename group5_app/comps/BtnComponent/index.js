@@ -20,10 +20,10 @@ const BtnComponent = ({
     width="210px",
     height="60px",
     fontsize="18px",
-    address="/agerange"
+    onClick=()=>{}
 })=>{
     const router = useRouter()
-    return <ButtonInput width={width} height={height} fs={fontsize} onClick={()=>router.push(address)}>{text}</ButtonInput>
+    return <ButtonInput width={width} height={height} fs={fontsize} onClick={onClick}>{text}</ButtonInput>
 }
 
 export default BtnComponent;

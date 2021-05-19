@@ -5,6 +5,7 @@ import ImgComponents from '../comps/ImgComponents'
 import BackBtn from  '../comps/BackBtn'
 import BtnComponent from "../comps/BtnComponent"
 import SuggestionBox from '../comps/SuggestionBox'
+import {router, useRouter} from 'next/router'
 
 
 const PageLayoutContainer = styled.div`
@@ -94,6 +95,7 @@ const PageLayoutContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter()
   return <PageLayoutContainer>
     <div className="back">
       <BackBtn address="/saving"/>
@@ -138,7 +140,7 @@ export default function Home() {
  
  
     <div className="btn">
-      <BtnComponent address="/bmipage" width="200px" height="65px" text="Take a quiz"/>
+      <BtnComponent onClick={()=>router.push("/Option/bmis")} width="200px" height="65px" text="Take a quiz"/>
     </div>
   </PageLayoutContainer>
 }

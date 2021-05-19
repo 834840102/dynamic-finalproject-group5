@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TextComponent from "../comps/TextComponent";
 import ImgComponents from "../comps/ImgComponents";
 import BtnComponent from "../comps/BtnComponent";
+import {useRouter} from 'next/router';
 
 const PageLayoutContainer = styled.div`
     display:flex;
@@ -45,6 +46,7 @@ const PageLayoutContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter()
     return <PageLayoutContainer>
       <div className="text">
         <TextComponent Subtitle="NUTRITIONAL SPACES" Hint="" h3fontsize="25px"/>
@@ -56,7 +58,7 @@ export default function Home() {
         <div ><TextComponent Subtitle="Promote Healthy Eating Habits!" Hint="Find out how fast food effect the body and how to improve healthy eating habits" h3color="#D7921E" h3fontsize="23px" pfontsize="20px"/></div>
       </div>
       <div className="btn">
-      <div><BtnComponent address="/started" width="200px" height="65px;"/></div>
+      <div><BtnComponent onClick={()=>router.push("/started")} width="200px" height="65px;"/></div>
     </div>
     </PageLayoutContainer>
   }

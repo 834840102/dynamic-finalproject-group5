@@ -5,6 +5,7 @@ import ImgComponents from '../comps/ImgComponents'
 import BackBtn from  '../comps/BackBtn'
 import BtnComponent from "../comps/BtnComponent"
 import SuggestionBox from '../comps/SuggestionBox'
+import {router, useRouter } from 'next/router'
 
 const PageLayoutContainer = styled.div`
     display:flex;
@@ -109,6 +110,7 @@ const PageLayoutContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter()
   return <PageLayoutContainer>
     <div className="back">
       <BackBtn address="/effects"/>
@@ -141,7 +143,7 @@ export default function Home() {
     </div>
  
     <div className="btn">
-      <BtnComponent address="/waste" width="200px" height="65px" text="PACKAGE WASTE"/>
+      <BtnComponent onClick={()=>router.push("/waste")} width="200px" height="65px" text="PACKAGE WASTE"/>
     </div>
   </PageLayoutContainer>
 }

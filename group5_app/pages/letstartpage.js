@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import {router, useRouter} from 'next/router'
 import styled from 'styled-components'
 import LogoComponent from '../comps/LogoComponent'
 import TextComponent from '../comps/TextComponent'
@@ -54,6 +54,7 @@ const PageLayoutContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter()
   return <PageLayoutContainer>
     <div className="back">
       <BackBtn address="/" />
@@ -69,7 +70,7 @@ export default function Home() {
       <ImgComponents src="meal.png" imgheight="260px" imgwidth="260px"/>
     </div>
     <div className="startbtn">
-          <BtnComponent address="/agerange" width="225px" height="60px" text="Let's Start"/>
+          <BtnComponent onClick={()=>router.push("/Option/bmis")} width="225px" height="60px" text="Let's Start"/>
     </div>
   </PageLayoutContainer>
 }

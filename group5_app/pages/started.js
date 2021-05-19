@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import styled from 'styled-components'
 import TextComponent from '../comps/TextComponent'
 import ImgComponents from '../comps/ImgComponents'
@@ -66,7 +66,7 @@ const PageLayoutContainer = styled.div`
 export default function Home() {
   return <PageLayoutContainer>
     <div className="back">
-      <BackBtn address="/welcomepage"/>
+      <BackBtn address="/welcompage"/>
     </div>
     <div className="MyImg">
       <ImgComponents src="https://i.pinimg.com/originals/50/40/fd/5040fd96a0a711f15102ce46ae011c1c.gif" imgheight="280px" imgwidth="280px"/>
@@ -84,7 +84,7 @@ export default function Home() {
       <TextComponent Subtitle = " Why should not eat fast food" Hint="" h3color="#33393E" h3fontsize="18px"/>
     </div>
     <div className="MyImg2">
-      <ImgComponents src="diet 1.png" imgheight="110px" imgwidth="110px" address="/suggestion" address="/bmipage"/>
+      <ImgComponents src="diet 1.png" imgheight="110px" imgwidth="110px" address="/Option/bmis"/>
     </div>
     <div>
       <TextComponent Subtitle = "What should you eat to maintain your health" Hint="" h3color="#33393E" h3fontsize="18px" h3fontweight=""/>

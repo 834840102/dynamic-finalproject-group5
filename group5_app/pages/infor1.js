@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styled from 'styled-components'
 import BackBtn from '../comps/BackBtn'
 import GoalBtn from '../comps/GoalBtn'

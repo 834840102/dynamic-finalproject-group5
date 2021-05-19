@@ -71,9 +71,9 @@ export default function Home() {
           <SuggestionBox display="none" Boxheight="" Boxwidth="200px" title="" listyle="none" suggestion1="BMI is a measure of body fat based on height and weight that applies to adult men and women." pfontsize="15px"/>
         </div>
       <div className="btn">
-        <div><BtnComponent text="UnderWeight (16-18.4)" width="280px" height="70px" address="/quiz1"/></div>
-        <div><BtnComponent text="Normal (18.4-24.9)" width="280px" height="70px" address="/quiz1"/></div>
-        <div><BtnComponent text="OverWeight (25.5-40)" width="280px" height="70px" address="/quiz1"/></div>
+        <div><BtnComponent text="UnderWeight (16-18.4)" width="280px" height="70px" address="/bmi/underweight"/></div>
+        <div><BtnComponent text="Normal (18.4-24.9)" width="280px" height="70px" address="/bmi/normal"/></div>
+        <div><BtnComponent text="OverWeight (25.5-40)" width="280px" height="70px" address="/bmi/overweight"/></div>
       </div>
     </PageLayoutContainer>
 }

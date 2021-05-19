@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styled from 'styled-components'
 import LogoComponent from '../comps/LogoComponent'
 import TextComponent from '../comps/TextComponent'
