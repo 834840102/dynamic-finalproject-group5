@@ -66,7 +66,7 @@ const PageLayoutContainer = styled.div`
 export default function Home() {
   return <PageLayoutContainer>
     <div className="back">
-      <BackBtn address="/welcompage"/>
+      <BackBtn address="/welcomepage"/>
     </div>
     <div className="MyImg">
       <ImgComponents src="https://i.pinimg.com/originals/50/40/fd/5040fd96a0a711f15102ce46ae011c1c.gif" imgheight="280px" imgwidth="280px"/>
