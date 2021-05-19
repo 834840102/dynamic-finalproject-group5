@@ -44,39 +44,52 @@ const PageLayoutContainer = styled.div`
       cursor: pointer;
       margin-bottom: 50px;
     }
+    
     .MyImg1{
       display:flex;
       flex-direction:column;
       cursor: pointer;
-      margin-bottom:30px;
+      margin-bottom:20px;
     }
-    .box {
-      opacity:0;
-      margin-top: -25px;
-      margin-bottom: 5px;
+    .box1{
+        margin-top: -10px;
+        margin-bottom: 20px;
+        animation: move 3s;
+        position: relative;
     }
-    
-    .MyImg1:hover + .box{
-      opacity:1;
-      animation: move 3s;
-      position: relative;
-    }
+     
     .MyImg2{
         display:flex;
         flex-direction:column;
         cursor: pointer;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
-    .MyImg2:hover + .box{
+    .box2{
       opacity:1;
-      animation: move 3s;
-      position: relative;
+      animation: move 6s;
+      position: relative; 
+      margin-top: -10px;
+      margin-bottom: 20px;
     }
+    .MyImg3{
+        display:flex;
+        flex-direction:column;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .box3{
+      opacity:1;
+      animation: move 9s;
+      position: relative;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+
     .btn{
         display:flex;
         flex-grow: 5;
         flex-direction:column;
-        margin-top:12%;
+        margin-top:2%;
       }
   
     button:hover{
@@ -84,8 +97,8 @@ const PageLayoutContainer = styled.div`
         cursor: pointer;
       }
       @keyframes move {
-        from {margin-right: -20%; }
-        to {margin-right: 0; }
+        from {left: -50%; opacity:0;}
+        to {left: 0; opactiy:1;}
       }
 `;
 
@@ -108,7 +121,7 @@ export default function Home() {
     <div className="MyImg1">
       <ImgComponents src="trash.png" imgheight="80px" imgwidth="80px"/>
     </div>
-    <div className="box">
+    <div className="box1">
       <SuggestionBox display="none" Boxheight="80px" Boxwidth="300px" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
     </div>
 
@@ -119,7 +132,7 @@ export default function Home() {
     <div className="MyImg2">
       <ImgComponents src="plastic.png" imgheight="80px" imgwidth="80px"/>
     </div>
-    <div className="box">
+    <div className="box2">
       <SuggestionBox Boxheight="205px" Boxwidth="300px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
     </div>
 
@@ -129,7 +142,7 @@ export default function Home() {
     <div className="MyImg2">
       <ImgComponents src="contamination.png" imgheight="80px" imgwidth="80px"/>
     </div>
-    <div className="box">
+    <div className="box3">
       <SuggestionBox Boxheight="175px" Boxwidth="300px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
     </div>
  
