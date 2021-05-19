@@ -16,7 +16,7 @@ const SuggestionBoxCont = styled.div`
 
 const SuggestionBoxText = styled.li`
     font-family:Raleway;
-    font-size: 18px;
+    font-size: 16px;
     font-weight:400;
     color: #33393E;
     list-style: ${props=>props.listyle};
@@ -24,7 +24,7 @@ const SuggestionBoxText = styled.li`
 
 const SuggestionBoxSub = styled.h4`
     font-family:Raleway;
-    font-size: 20px;
+    font-size: 16px;
     font-weight:700;
     color: #6C9083;
 `;
