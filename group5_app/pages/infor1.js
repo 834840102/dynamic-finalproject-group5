@@ -50,7 +50,7 @@ export default function Home() {
   return <PageLayoutContainer>
     
     <div className="back">
-           <BackBtn address="/bmipage"/>
+           <BackBtn address="/started"/>
     </div>
     <div className="logo">
       <LogoComponent address="/welcomepage"/>
