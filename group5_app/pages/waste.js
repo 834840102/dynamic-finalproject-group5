@@ -120,7 +120,7 @@ export default function Home() {
       <TextComponent Subtitle = "Packaging waste" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg1">
-      <ImgComponents src="trash.png" imgheight="110px" imgwidth="110px"/>
+      <ImgComponents src="trash.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox display="none" Boxheight="100px" Boxwidth="320px" listyle="none" suggestion1="40% of the total waste with Styrofoam. What's more, it took an incredible 900 years to decompose in the landfill!" />
@@ -131,7 +131,7 @@ export default function Home() {
       <TextComponent Subtitle = "Water Contamination" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg2">
-      <ImgComponents src="plastic.png" imgheight="100px" imgwidth="100px"/>
+      <ImgComponents src="plastic.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox Boxheight="240px" Boxwidth="320px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
@@ -141,7 +141,7 @@ export default function Home() {
       <TextComponent Subtitle = "Environmental pollution" Hint="" h3fontsize="18px" h3color="#33393E"/>
     </div>
     <div className="MyImg2">
-      <ImgComponents src="contamination.png" imgheight="100px" imgwidth="100px"/>
+      <ImgComponents src="contamination.png" imgheight="80px" imgwidth="80px"/>
     </div>
     <div className="box">
       <SuggestionBox Boxheight="190px" Boxwidth="320px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
