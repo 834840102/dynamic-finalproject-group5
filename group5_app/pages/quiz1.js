@@ -41,7 +41,7 @@ export default function Home() {
       <ImgComponents src="https://i.pinimg.com/originals/6d/17/b9/6d17b970849f62353e7509daff49db3f.gif" imgheight="300px" imgwidth="400px"/>
     </div>
       <div>
-        <TextComponent Subtitle="How often do you eat fast food?" Hint="" h3fontsize="22px" />
+        <TextComponent Subtitle="How often do you eat fast food?" Hint=""/>
         </div>
         <div className="btn">
       <div><BtnComponent text="Everyday" address="/quiz2"/></div>
