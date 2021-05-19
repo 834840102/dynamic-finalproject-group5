@@ -89,6 +89,5 @@ export default function Home() {
     <div>
       <TextComponent Subtitle = "What should you eat to maintain your health" Hint="" h3color="#33393E"  h3fontweight=""/>
     </div>
-
   </PageLayoutContainer>
 }
