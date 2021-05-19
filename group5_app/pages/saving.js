@@ -34,7 +34,7 @@ const PageLayoutContainer = styled.div`
     .text4{
         display:flex;
         flex-direction: column;
-        margin-bottom: 0%;
+        margin-bottom: 10px;
       }
   
     .MyImg{
@@ -51,26 +51,24 @@ const PageLayoutContainer = styled.div`
       margin-bottom:20px;
     }
     .box {
-        opacity:1;
-        margin-top: -15px;
+        margin-top: -10px;
         margin-bottom: 20px;
+        animation: move 3s;
+        position: relative;
     }
-    
-    .MyImg1:hover + .box{
-      opacity:1;
-      animation: move 3s;
-      position: relative;
-    }
+     
     .MyImg2{
         display:flex;
         flex-direction:column;
         cursor: pointer;
         margin-bottom: 20px;
     }
-    .MyImg2:hover + .box{
+    .box2{
       opacity:1;
-      animation: move 3s;
-      position: relative;
+      animation: move 6s;
+      position: relative; 
+      margin-top: -10px;
+      margin-bottom: 20px;
     }
     .MyImg3{
         display:flex;
@@ -78,9 +76,9 @@ const PageLayoutContainer = styled.div`
         cursor: pointer;
         margin-bottom: 20px;
     }
-    .MyImg3:hover + .box{
+    .box3{
       opacity:1;
-      animation: move 3s;
+      animation: move 9s;
       position: relative;
     }
     .btn{
@@ -95,8 +93,8 @@ const PageLayoutContainer = styled.div`
         cursor: pointer;
       }
       @keyframes move {
-        from {margin-left: -20%; }
-        to {margin-left: 0; }
+        from {left: -50%; opacity:0;}
+        to {left: 0; opactiy:1;}
       }
 `;
 
@@ -113,7 +111,7 @@ export default function Home() {
       <TextComponent Subtitle = "Wasting money" Hint=""/>
     </div>
     <div className="text2">
-      <TextComponent Subtitle = "Why is cooking more beneficial than eating fast food habits?" Hint="Eating at home allows you to control the ingredients in the food, instead of using natural ingredients because processed foods are unsafe for health." h3fontsize="20px" h3color="#33393E"/>
+      <TextComponent Subtitle = "Why is cooking more beneficial than eating fast food habits?" Hint="Eating at home allows you to control the ingredients in the food, instead of using natural ingredients because processed foods are unsafe for health." h3color="#33393E"/>
     </div>
     
     
@@ -133,7 +131,7 @@ export default function Home() {
     <div className="MyImg2">
       <ImgComponents src="/fastfood.png" imgheight="80px" imgwidth="80px"/>
     </div>
-    <div className="box">
+    <div className="box2">
       <SuggestionBox Boxheight="130px" Boxwidth="300px" title="" listyle="none" suggestion1="Traditional meals with a variety of fresh, clean foods bring health. While fast food is just a waste of money because it has no nutritional value and brings many health risks." />
     </div>
 
@@ -143,7 +141,7 @@ export default function Home() {
     <div className="MyImg3">
       <ImgComponents src="/save-money.png" imgheight="80px" imgwidth="80px"/>
     </div>
-    <div className="box">
+    <div className="box3">
       <SuggestionBox display="none" Boxheight="200px" Boxwidth="300px" title="" listyle="none" suggestion1="Based on prices at a superstore grocery store, a McDonald's meal is $14 more than a home-cooked meal. In addition to saving money, home-cooked meals are much healthier. Compare that same meal to an even cheaper dinner of rice and beans with bacon, peppers, and onions to save more than $18." />
     </div>
  
