@@ -21,19 +21,16 @@ const PageLayoutContainer = styled.div`
       margin-right: 80%;
       cursor:pointer;
     }
-
     .text{
       display:flex;
       flex-direction: column;
-      margin-top: -5%;
+      margin-top: -50px;
     }
-
     .text2{
       display:flex;
       flex-direction: column;
       margin-bottom: 4%;
     }
-
     .text4{
         display:flex;
         flex-direction: column;
@@ -41,21 +38,22 @@ const PageLayoutContainer = styled.div`
       }
   
     .MyImg{
+      margin-top:-40px;
+      margin-bottom:20px;
       display:flex;
       flex-direction:column;
       cursor: pointer;
     }
-
     .MyImg1{
       display:flex;
       flex-direction:column;
       cursor: pointer;
       margin-bottom:20px;
     }
-
     .box {
-        opacity:0;
+        opacity:1;
         margin-top: -15px;
+        margin-bottom: 20px;
     }
     
     .MyImg1:hover + .box{
@@ -63,33 +61,28 @@ const PageLayoutContainer = styled.div`
       animation: move 3s;
       position: relative;
     }
-
     .MyImg2{
         display:flex;
         flex-direction:column;
         cursor: pointer;
         margin-bottom: 20px;
     }
-
     .MyImg2:hover + .box{
       opacity:1;
       animation: move 3s;
       position: relative;
     }
-
     .MyImg3{
         display:flex;
         flex-direction:column;
         cursor: pointer;
         margin-bottom: 20px;
     }
-
     .MyImg3:hover + .box{
       opacity:1;
       animation: move 3s;
       position: relative;
     }
-
     .btn{
         display:flex;
         flex-grow: 5;
@@ -101,7 +94,6 @@ const PageLayoutContainer = styled.div`
         background-color: #6C9083;
         cursor: pointer;
       }
-
       @keyframes move {
         from {margin-left: -20%; }
         to {margin-left: 0; }
