@@ -123,16 +123,16 @@ export default function Options() {
       <BackBtn address="/started"/>
     </div>
     <div className="BtnTitle">
-        <BtnComponent text="BMI" onClick={()=>router.push("/Option/bmis")}  width="130px" height="60px"/>
-        <BtnComponent text="Fastfood" onClick={()=>router.push("/Option/fastfood")} width="130px" height="60px"/>
-        <BtnComponent text="Exercise" onClick={()=>router.push("/Option/exercise")} width="130px" height="60px"/>
+        <BtnComponent text="BMI" onClick={()=>router.push("/Option/bmis")}  width="110px" height="50px"/>
+        <BtnComponent text="Fastfood" onClick={()=>router.push("/Option/fastfood")} width="110px" height="50px"/>
+        <BtnComponent text="Exercise" onClick={()=>router.push("/Option/exercise")} width="110px" height="50px"/>
     </div>
     <div className="MyImg">
     <ImgComponents src={buttontexts.img} imgheight="240px" imgwidth="360px"/>
     </div>
     
       <div className="Quiz">
-        <TextComponent Subtitle={buttontexts.title} Hint="" h3fontsize="22px" />
+        <TextComponent Subtitle={buttontexts.title} Hint="" />
         </div>
         <div className="btn">
       <BtnComponent text={buttontexts.option1} onClick={()=>HandleClick(buttontexts.option1)}/>
