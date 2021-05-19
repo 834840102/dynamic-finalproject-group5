@@ -156,7 +156,7 @@ export default function Home() {
     </div>
  
     <div className="btn">
-      <BtnComponent onClick={()=>router.push("/waste")} width="200px" height="65px" text="PACKAGE WASTE"/>
+      <BtnComponent onClick={()=>router.push("/waste")} width="200px" height="60px" text="PACKAGE WASTE"/>
     </div>
   </PageLayoutContainer>
 }
