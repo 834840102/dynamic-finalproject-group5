@@ -61,12 +61,14 @@ const PageLayoutContainer = styled.div`
     }
 
     .box {
-        display: none;
-        margin-top: 20px;
+      opacity:0;
+      margin-top: 20px;
     }
     
     .MyImg1:hover + .box{
-        display:block;
+      opacity:1;
+      animation: move 3s;
+      position: relative;
     }
 
     .MyImg2{
@@ -77,7 +79,9 @@ const PageLayoutContainer = styled.div`
     }
 
     .MyImg2:hover + .box{
-        display:block;
+      opacity:1;
+      animation: move 3s;
+      position: relative;
     }
 
 
@@ -91,6 +95,11 @@ const PageLayoutContainer = styled.div`
     button:hover{
         background-color: #6C9083;
         cursor: pointer;
+      }
+
+      @keyframes move {
+        from {margin-right: -20%; }
+        to {margin-right: 0; }
       }
 `;
 
@@ -125,7 +134,7 @@ export default function Home() {
       <ImgComponents src="plastic.png" imgheight="100px" imgwidth="100px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="240px" Boxwidth="320px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
+      <SuggestionBox Boxheight="240px" Boxwidth="320px" listyle="none" suggestion1="Pathogens, hormones, drugs, and fertilizers that are used to produce fast food, seeping into our water supplies, water quality has suffered dramatically. Outbreaks of waterborne illness including E. Coli, marine life dead zones, and numerous other hazards can all be contributed to fast food." />
     </div>
 
     <div className="text4">
@@ -135,7 +144,7 @@ export default function Home() {
       <ImgComponents src="contamination.png" imgheight="100px" imgwidth="100px"/>
     </div>
     <div className="box">
-      <SuggestionBox display="none" Boxheight="190px" Boxwidth="320px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
+      <SuggestionBox Boxheight="190px" Boxwidth="320px" listyle="none" suggestion1="Every day, tons of fast food is wasted causing more and more waste. Leftovers are the largest constituent of municipal solid waste. At landfills, food is slowly decomposed into methane, a greenhouse gas 86 times stronger than carbon dioxide." />
     </div>
  
  

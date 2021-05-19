@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styled from 'styled-components'
 import LogoComponent from '../comps/LogoComponent'
 
@@ -30,6 +29,6 @@ const PageLayoutContainer = styled.div`
 
 export default function Home(){
     return <PageLayoutContainer>
-        <LogoComponent width="140px" height="190px" address="/welcomepage"/>
+        <LogoComponent width="90px" height="120px" address="/welcomepage"/>
         </PageLayoutContainer>
-} 
+}
