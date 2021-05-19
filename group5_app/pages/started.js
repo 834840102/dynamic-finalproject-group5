@@ -72,22 +72,22 @@ export default function Home() {
       <ImgComponents src="https://i.pinimg.com/originals/50/40/fd/5040fd96a0a711f15102ce46ae011c1c.gif" imgheight="280px" imgwidth="280px"/>
     </div>
     <div className="text">
-      <TextComponent Subtitle = "Before you start..." Hint="" h3fontsize="22px" />
+      <TextComponent Subtitle = "Before you start..." Hint=""  />
     </div>
     <div className="text2">
-      <TextComponent Subtitle = "" Hint="We’ve got your back every step of the way. Before you begin your jouney, let’s go through some important things!" pfontsize="18px" h3color="#33393E"/>
+      <TextComponent Subtitle = "" Hint="We’ve got your back every step of the way. Before you begin your jouney, let’s go through some important things!" h3color="#33393E"/>
     </div>
     <div className="MyImg1">
       <ImgComponents src="pizza-slice.png" imgheight="110px" imgwidth="110px" address="/infor1"/>
     </div>
     <div>
-      <TextComponent Subtitle = " Why should not eat fast food" Hint="" h3color="#33393E" h3fontsize="18px"/>
+      <TextComponent Subtitle = " Why should not eat fast food" Hint="" h3color="#33393E" "/>
     </div>
     <div className="MyImg2">
       <ImgComponents src="diet 1.png" imgheight="110px" imgwidth="110px" address="/Option/bmis"/>
     </div>
     <div>
-      <TextComponent Subtitle = "What should you eat to maintain your health" Hint="" h3color="#33393E" h3fontsize="18px" h3fontweight=""/>
+      <TextComponent Subtitle = "What should you eat to maintain your health" Hint="" h3color="#33393E"  h3fontweight=""/>
     </div>
 
   </PageLayoutContainer>
