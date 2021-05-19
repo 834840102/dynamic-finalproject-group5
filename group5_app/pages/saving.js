@@ -55,7 +55,7 @@ const PageLayoutContainer = styled.div`
 
     .box {
         opacity:0;
-        margin-top: -10px;
+        margin-top: -15px;
     }
     
     .MyImg1:hover + .box{
