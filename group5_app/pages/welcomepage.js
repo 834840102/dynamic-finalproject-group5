@@ -52,13 +52,13 @@ export default function Home() {
         <TextComponent Subtitle="NUTRITIONAL SPACES" Hint="" h3fontsize="25px"/>
         </div>
       <div className="picture">
-        <ImgComponents src="/mainpic.jpeg" borderradius="50%" imgheight="270px" imgwidth="270px" />
+        <ImgComponents src="/mainpic.jpeg" borderradius="50%" imgheight="230px" imgwidth="230px" />
         </div>
       <div className="slogan">
         <div ><TextComponent Subtitle="Promote Healthy Eating Habits!" Hint="Find out how fast food effect the body and how to improve healthy eating habits" h3color="#D7921E" h3fontsize="23px" pfontsize="20px"/></div>
       </div>
       <div className="btn">
-      <div><BtnComponent onClick={()=>router.push("/started")} width="200px" height="65px;"/></div>
+      <div><BtnComponent onClick={()=>router.push("/started")} width="180px" height="50px;"/></div>
     </div>
     </PageLayoutContainer>
   }
