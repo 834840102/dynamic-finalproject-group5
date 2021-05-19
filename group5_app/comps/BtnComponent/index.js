@@ -17,9 +17,9 @@ const ButtonInput = styled.button`
 
 const BtnComponent = ({
     text="Get Started",
-    width="180px",
-    height="50px",
-    fontsize="16px",
+    width="200px",
+    height="60px",
+    fontsize="15px",
     onClick=()=>{}
 })=>{
     const router = useRouter()
