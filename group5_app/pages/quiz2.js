@@ -47,7 +47,7 @@ export default function Home() {
         <ImgComponents src="https://i.pinimg.com/originals/29/86/2a/29862a40b71e79957c6343a783015c22.gif"  imgheight="300px" imgwidth="350px" />
         </div>
       <div>
-        <TextComponent Subtitle="How often do you exercise?" Hint="" h3fontsize="22px" />
+        <TextComponent Subtitle="How often do you exercise?" Hint=""/>
         </div>
         <div className="btn">
       <div><BtnComponent text="Everyday" address="/"/></div>
