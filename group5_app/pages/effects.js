@@ -101,7 +101,7 @@ const PageLayoutContainer = styled.div`
         display:flex;
         flex-grow: 5;
         flex-direction:column;
-        margin-top:12%;
+        margin-top:2%;
       }
   
     button:hover{
