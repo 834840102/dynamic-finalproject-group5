@@ -149,7 +149,7 @@ export default function Home() {
  
  
     <div className="btn">
-      <BtnComponent onClick={()=>router.push("/Option/bmis")} width="200px" height="65px" text="Take a quiz"/>
+      <BtnComponent onClick={()=>router.push("/Option/bmis")} width="200px" height="60px" text="Take a quiz"/>
     </div>
   </PageLayoutContainer>
 }
